@@ -8,3 +8,16 @@
     Gatsby docs are available in <code>README-GATSBY.md</code>
 </p>
 
+<h2>Discussion</h2>
+
+<p>
+    Trade-off between development from scratch and existing components, especially in a demo showpiece.
+</p>
+
+<h2>Considering</h2>
+
+<ul>
+    <li>
+        <a href="https://www.npmjs.com/package/react-google-font-loader">React Google Font Loader</a>
+    </li>
+</ul> 
