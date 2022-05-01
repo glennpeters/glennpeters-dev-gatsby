@@ -4,13 +4,14 @@ import React from "react"
 
 import Header from "./header"
 
-// import '../css/layout.css'
+import './layout.css'
 
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <>
       <Header pageTitle={pageTitle} />
+
       <div className="page-layout page-wide">
         <main>{children}</main>
 

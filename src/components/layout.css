@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Jura|Merriweather|Source+Sans+Pro&display=swap'); */
+
+/* ============================================================== *\
+ *
+ * Theme / Palette
+ *
+\* ============================================================== */
+
+/* https://www.color-hex.com/color-palette/84804
+
+Dark Blue: #00203b	(0,32,59)
+Mid Blue: #005fb1	(0,95,177)
+Bright Blue: #0074d8	(0,116,216)
+Slate Blue: #6791a2	(103,145,162)
+Light Grey: #edf2f4	(237,242,244)
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #edf2f4; */
+}
+
+html, body {
+    font-family: Jura, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+a:-webkit-any-link {
+    /* color: -webkit-link; */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+main {
+    padding: 1rem;
+    margin: 0 0 3.5rem;
+
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 1.5rem;
+    background-color: #005fb1;
+    color: #fff;
+    margin: 0;
+    padding: 0.7rem 2rem;
+    text-align: center;
+}

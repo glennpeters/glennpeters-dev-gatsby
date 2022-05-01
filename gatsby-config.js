@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `glennpeters-dev`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.glennpeters.dev`
   },
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-less", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",

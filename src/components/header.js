@@ -2,36 +2,38 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-// import '../css/header.css'
+import './header.css'
 
 const Header = ({ pageTitle, siteTitle }) => (
     <header>
-        <h1>
-            <Link
-                to="/"
-            >
-                {siteTitle}: {pageTitle}
-            </Link>
-        </h1>
-        <nav>
-            <div className="nav-inner">
+        <div className="container">
+            <h1>
                 <Link
-                    to="/about"
+                    to="/"
                 >
-                    About
-                </Link> | {' '}
-                <Link
-                    to="/portfolio"
-                >
-                    Portfolio
-                </Link> | {' '}
-                <Link
-                    to="/resume"
-                >
-                    R&eacute;sum&eacute;
-                </Link> 
-            </div>
-        </nav>
+                    {siteTitle}: {pageTitle}
+                </Link>
+            </h1>
+            <nav>
+                <div className="nav-inner">
+                    <Link
+                        to="/about"
+                    >
+                        About
+                    </Link> | {' '}
+                    <Link
+                        to="/portfolio"
+                    >
+                        Portfolio
+                    </Link> | {' '}
+                    <Link
+                        to="/resume"
+                    >
+                        R&eacute;sum&eacute;
+                    </Link> 
+                </div>
+            </nav>
+        </div>
     </header>
 )
 

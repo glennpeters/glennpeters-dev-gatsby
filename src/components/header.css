@@ -1,0 +1,19 @@
+
+header {
+    background-color: #005fb1;
+    color: #fff;
+}
+
+header a:-webkit-any-link {
+    color: #fff;
+    padding: 0.4rem 0.5rem;
+}
+
+header a:focus {
+    background-color: #333;
+}
+
+header nav {
+    width: 100%;
+    text-align: right;
+}
