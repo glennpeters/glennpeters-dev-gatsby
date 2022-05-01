@@ -4,13 +4,13 @@ import React from "react"
 
 // import '../css/header.css'
 
-const Header = ({ pageTitle }) => (
-    <>
+const Header = ({ pageTitle, siteTitle }) => (
+    <header>
         <h1>
             <Link
                 to="/"
             >
-                Home: {pageTitle}
+                {siteTitle}: {pageTitle}
             </Link>
         </h1>
         <nav>
@@ -19,12 +19,12 @@ const Header = ({ pageTitle }) => (
                     to="/about"
                 >
                     About
-                </Link> | 
+                </Link> | {' '}
                 <Link
                     to="/portfolio"
                 >
                     Portfolio
-                </Link> | 
+                </Link> | {' '}
                 <Link
                     to="/resume"
                 >
@@ -32,7 +32,7 @@ const Header = ({ pageTitle }) => (
                 </Link> 
             </div>
         </nav>
-    </>
+    </header>
 )
 
 // const Wrapper = styled.div`
@@ -46,38 +46,6 @@ const Header = ({ pageTitle }) => (
 //   }
 // `;
 
-// const Header = ({ siteTitle }) => (
-//   <header>
-//     <div className="page-wide">
-//       <h1>
-//         <Link
-//           to="/"
-//         >
-//           {siteTitle}
-//         </Link>
-//       </h1>
-//       <nav>
-//         <div className="nav-inner">
-//           <Link
-//             to="/portfolio"
-//           >
-//             Portfolio
-//           </Link> | 
-//           <Link
-//             to="/"
-//           >
-//             About
-//           </Link>
-//           <Link
-//             to="/resume"
-//           >
-//             R&eacute;sum&eacute;
-//           </Link> 
-//         </div>
-//       </nav>
-//     </div>
-//   </header>
-// )
 
 Header.propTypes = {
     pageTitle: PropTypes.string,
@@ -86,7 +54,7 @@ Header.propTypes = {
 
 Header.defaultProps = {
     pageTitle: ``,
-    siteTitle: ``,
+    siteTitle: `Glenn Peters`,
 }
 
 export default Header

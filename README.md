@@ -20,4 +20,10 @@
     <li>
         <a href="https://www.npmjs.com/package/react-google-font-loader">React Google Font Loader</a>
     </li>
+    <li>
+        <a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-less/">gatsby-plugin-less</a>
+    </li>
+    <li>
+        <a href="https://www.gatsbyjs.com/docs/how-to/styling/sass/">how-to/styling/sass</a>
+    </li>
 </ul> 

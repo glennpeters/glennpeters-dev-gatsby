@@ -130,10 +130,11 @@ const links = [
 // markup
 const PortfolioPage = () => {
   return (
-    <Layout pageInfo="Portfolio">
+    <Layout pageTitle="Portfolio">
 
     <main style={pageStyles}>
-      <title>Glenn Peters: Portfolio</title>
+      {/* <title>Glenn Peters: Portfolio</title> */}
+
       <h1 style={headingStyles}>
         Glenn Peters: Portfolio
       </h1>

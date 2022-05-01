@@ -2,23 +2,15 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-// import '../css/header.css'
 import Header from "./header"
 
-const Layout = ({ pageTitle, children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
+// import '../css/layout.css'
 
+
+const Layout = ({ pageTitle, children }) => {
   return (
     <>
-      <Header siteTitle={pageTitle} />
+      <Header pageTitle={pageTitle} />
       <div className="page-layout page-wide">
         <main>{children}</main>
 
@@ -32,12 +24,9 @@ const Layout = ({ pageTitle, children }) => {
   )
 }
 
-// Layout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
-
 Layout.propTypes = {
   pageTitle: PropTypes.string,
+  children: PropTypes.node.isRequired,
 }
 
 Layout.defaultProps = {
