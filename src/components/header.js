@@ -20,12 +20,12 @@ const Header = ({ pageTitle, siteTitle }) => (
                         to="/about"
                     >
                         About
-                    </Link> | {' '}
+                    </Link>
                     <Link
                         to="/portfolio"
                     >
                         Portfolio
-                    </Link> | {' '}
+                    </Link>
                     <Link
                         to="/resume"
                     >
@@ -36,18 +36,6 @@ const Header = ({ pageTitle, siteTitle }) => (
         </div>
     </header>
 )
-
-// const Wrapper = styled.div`
-//   input[type='radio'] {
-//     margin: 0;
-//     opacity: 0;
-//     width: 0;
-//     height: 0;
-//     padding: 0;
-//     background-color: red;
-//   }
-// `;
-
 
 Header.propTypes = {
     pageTitle: PropTypes.string,

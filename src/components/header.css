@@ -4,13 +4,34 @@ header {
     color: #fff;
 }
 
-header a:-webkit-any-link {
+/* header a:-webkit-any-link {
     color: #fff;
-    padding: 0.4rem 0.5rem;
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+} */
+
+header a {
+    color: #fff;
+    /* padding: 0.4rem 0.8rem; */
+    display: inline-block;
+    transition: all .5s ease-in-out;
 }
 
-header a:focus {
-    background-color: #333;
+header nav a {
+    padding: 0.4rem 0.8rem;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px -5px rgba(255,255,255,0);
+}
+
+header nav a[aria-current="page"] {
+    background-color: #0074d8;
+}
+
+header nav a:hover,
+header nav a:active,
+header nav a:focus {
+    /* Reserving for different effects between hover/active and selected */
+    background-color: #0074d8;
 }
 
 header nav {

@@ -12,15 +12,17 @@ const Layout = ({ pageTitle, children }) => {
     <>
       <Header pageTitle={pageTitle} />
 
-      <div className="page-layout page-wide">
-        <main>{children}</main>
+      <main>
+        <div className="container">
+          {children}
+        </div>
+      </main>
 
-        <footer>
-          <div className="page-wide">
-            © {new Date().getFullYear()} Glenn Peters
-          </div>
-        </footer>
-      </div>
+      <footer>
+        <div className="container">
+          © {new Date().getFullYear()} Glenn Peters
+        </div>
+      </footer>
     </>
   )
 }
