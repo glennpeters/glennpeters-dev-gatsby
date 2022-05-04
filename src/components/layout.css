@@ -24,14 +24,14 @@ Light Grey: #edf2f4	(237,242,244)
  *
 \* ============================================================== */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
     vertical-align: baseline;
     background: transparent;
-}
+} */
 
 html {
   font-family: sans-serif;
@@ -78,7 +78,57 @@ a:-webkit-any-link {
 main {
     padding: 1rem;
     margin: 0 0 3.5rem;
+}
 
+main figure {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main figure img {
+    width: 100%;
+    /* border-radius: 0.8rem; */
+    transition: all 1s ease-in-out;
+}
+
+main h2 {
+    margin: 0 0 1rem;
+}
+
+main section {
+    margin: 1rem auto 1.5rem;
+}
+
+main section h3 {
+    margin: 0 0 0.5rem;
+}
+
+main section p {
+    margin: 0 0 1rem;
+}
+
+main #portfolio figure {
+    width: 100%;
+    margin: 1rem auto 1.6rem;
+    text-align: center;
+}
+
+main #portfolio figure figcaption {
+    margin: 0.4rem auto;
+    font-size: 0.8rem;
+}
+
+main #portfolio figure img {
+    width: 90%;
+    opacity: 0.8;
+    filter: grayscale(50%);
+    display: inline-block;
+}
+
+main #portfolio figure:hover img {
+    opacity: 1;
+    filter: grayscale(0%);
 }
 
 
@@ -93,4 +143,36 @@ footer {
     margin: 0;
     padding: 0.7rem 2rem;
     text-align: center;
+}
+
+
+/* ============================================================== *\
+ *
+ * Styles for print
+ *
+\* ============================================================== */
+
+@media print 
+{
+	header, footer
+	{
+    display: none;
+	}
+
+  .noPrint
+  {
+    display: none;
+  }
+
+  @media not print {
+    .onlyPrint
+    {
+      display: none;
+    }
+  }
+  
+  body 
+	{ 
+		background: #ffffff;
+	}
 }

@@ -4,20 +4,21 @@ import React from "react"
 
 import './header.css'
 
-const Header = ({ pageTitle, siteTitle }) => (
+const Header = ({ siteTitle }) => (
     <header>
         <div className="container">
             <h1>
                 <Link
                     to="/"
                 >
-                    {siteTitle}: {pageTitle}
+                    {siteTitle}
+                    {/* : {pageTitle} */}
                 </Link>
             </h1>
             <nav>
                 <div className="nav-inner">
                     <Link
-                        to="/about"
+                        to="/"
                     >
                         About
                     </Link>
@@ -38,12 +39,12 @@ const Header = ({ pageTitle, siteTitle }) => (
 )
 
 Header.propTypes = {
-    pageTitle: PropTypes.string,
+    // pageTitle: PropTypes.string,
     siteTitle: PropTypes.string,
 }
 
 Header.defaultProps = {
-    pageTitle: ``,
+    // pageTitle: ``,
     siteTitle: `Glenn Peters`,
 }
 
