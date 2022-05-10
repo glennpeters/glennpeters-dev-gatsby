@@ -28,7 +28,7 @@ const PortfolioPage = () => {
             <h3>Intel Home Page Update 2021+</h3>
 
             <figure>
-              <img src={intelHome} />
+              <img src={intelHome} alt="" />
 
               <figcaption>Intel Home Page incremental update to be more modern, lightweight and accessible</figcaption>
             </figure>
@@ -39,7 +39,7 @@ const PortfolioPage = () => {
             <h3>Intel Contact Support 2021+</h3>
 
             <figure>
-              <img src={intelContactSupport} />
+              <img src={intelContactSupport} alt="" />
 
               <figcaption>Contact Support updated with improved accessibility, including keyboard support</figcaption>
             </figure>
@@ -50,7 +50,7 @@ const PortfolioPage = () => {
             <h3>Download Center Pages 2021+</h3>
 
             <figure>
-              <img src={intelDownloadCenterPages} />
+              <img src={intelDownloadCenterPages} alt="" />
 
               <figcaption>Contact Support updated with improved accessibility, including keyboard support</figcaption>
             </figure>
@@ -60,7 +60,7 @@ const PortfolioPage = () => {
             <h3>Malarkey Roofing via Harlo Interactive</h3>
 
             <figure>
-              <img src={malarkeyHome} />
+              <img src={malarkeyHome} alt="" />
 
               <figcaption>Malarkey home page</figcaption>
             </figure>
@@ -71,7 +71,7 @@ const PortfolioPage = () => {
             </p>
 
             <figure>
-              <img src={malarkeyShingles} />
+              <img src={malarkeyShingles} alt="" />
 
               <figcaption>Shingle Selector app</figcaption>
             </figure>
@@ -85,7 +85,7 @@ const PortfolioPage = () => {
             <h3>OregonGo.org</h3>
 
             <figure>
-              <img src={oregonGo} />
+              <img src={oregonGo} alt="" />
 
               <figcaption>Shingle Selector</figcaption>
             </figure>

@@ -7,10 +7,10 @@ import Header from "./header"
 import './layout.css'
 
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ layoutClass, pageTitle, children }) => {
   return (
     <>
-      <Header pageTitle={pageTitle} />
+      <Header pageTitle={pageTitle} className={layoutClass} />
 
       <main>
         <div className="container">
@@ -28,12 +28,14 @@ const Layout = ({ pageTitle, children }) => {
 }
 
 Layout.propTypes = {
+  layoutClass: PropTypes.string,
   pageTitle: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 
 Layout.defaultProps = {
   pageTitle: ``,
+  layoutClass: ``,
 }
 
 

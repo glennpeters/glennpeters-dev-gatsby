@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 // markup
 const ResumePage = () => {
   return (
-    <Layout pageTitle="Resume">
+    <Layout pageTitle="Resume" layoutClass="resume">
 
         <h2>Resume</h2>
 

@@ -78,6 +78,7 @@ a:-webkit-any-link {
 main {
     padding: 1rem;
     margin: 0 0 3.5rem;
+    line-height: 1.35;
 }
 
 main figure {
@@ -130,8 +131,6 @@ main #portfolio figure:hover img {
     opacity: 1;
     filter: grayscale(0%);
 }
-
-
 
 footer {
     position: fixed;

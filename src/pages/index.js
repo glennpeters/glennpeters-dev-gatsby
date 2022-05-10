@@ -12,15 +12,15 @@ const IndexPage = () => {
       <title>About Glenn Peters</title>
 
       <figure>
-        <img src={coastGlenn} />
+        <img src={coastGlenn} alt="" />
       </figure>
 
       <section>
         <h2>About Me</h2>
 
         <p>
-          I am a front end web developer who have worked at 
-          big companies like Intel, DSV, and Oracle as well as small to mid-size startups and agencies.  
+          I am a front end web developer who has worked at 
+          large companies such as Intel, DSV, and Oracle as well as small to mid-size startups and agencies.  
         </p>
 
         <p>
@@ -30,7 +30,7 @@ const IndexPage = () => {
         </p>
         
         <p>
-          Just some examples of what he&apos;s accomplished include: 
+          Just some examples of what I&apos;ve accomplished include: 
         </p>
 
         <ul>
