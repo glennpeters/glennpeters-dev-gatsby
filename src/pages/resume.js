@@ -18,7 +18,7 @@ const ResumePage = () => {
               <a href="tel:503-753-4919">503 753-4919</a>
             </li>
             <li className="mail">
-              <a href="mailto:work@glennbpeters.com">work@glennbpeters.com</a>
+              <a href="mailto:work@glennpeters.dev">work@glennpeters.dev</a>
             </li>
           </ul>
         </section>
