@@ -6,17 +6,18 @@ import Layout from "../components/layout"
 const ResumePage = () => {
   return (
     <Layout pageTitle="Resume" layoutClass="resume">
+        <title>Resume</title>
 
-        <h2>Resume</h2>
+        {/* <h2>Resume</h2> */}
 
         <section className="myInfo" aria-label="My Info">
-          <ul>
+          <ul className="unstyled-list">
             <li className="location">
                 Portland, OR
             </li>
-            <li className="phone">
+            {/* <li className="phone">
               <a href="tel:503-753-4919">503 753-4919</a>
-            </li>
+            </li> */}
             <li className="mail">
               <a href="mailto:work@glennpeters.dev">work@glennpeters.dev</a>
             </li>
@@ -26,28 +27,28 @@ const ResumePage = () => {
         <section id="technologies">
           <h3>Technologies</h3>
 
-          <ul>
-            <li>
-              <strong>Languages and libraries</strong>
+          <dl className="unstyled-list">
+            <dt>Languages and libraries</dt>
+            <dd>
               HTML5, CSS3 (Responsive Design, Media Queries), 
               LESS, SASS, JavaScript 
               (including jQuery, React, Vue, Angular, Knockout, Greensock, 
               Handlebars, etc.), 
               SQL, PHP, Perl
-            </li>
+            </dd>
             {/* <li>
               <strong>Platforms</strong>
               Macintosh, Windows, Unix / Linux
             </li> */}
-            <li>
-              <strong>Tools and Protocols</strong>
+            <dt>Tools and Protocols</dt>
+            <dd>
               VS Code, Visual Studio, 
               Jira/Atlassian Suite, Snowflake, 
               mySQL, SQL Server, 
               SQL Developer, Oracle, IIS, Apache, Photoshop,
               Tableau, Git, Visual SourceSafe, CVS, Subversion
-            </li>
-          </ul>
+            </dd>
+          </dl>
         </section>
 
         <section id="workExperience">
@@ -515,7 +516,7 @@ const ResumePage = () => {
         </section>
 
         <section id="note" aria-label="Previous Experience">
-          <h3>Previous Experience Upon Request &emdash; including Oracle, CMD, and Via Training. </h3>
+          <h3>Previous Experience Upon Request &mdash; including Oracle, CMD, and Via Training. </h3>
         </section>
 
         <section id="personal">

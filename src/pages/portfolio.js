@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
+import PortfolioCard from "../components/PortfolioCard/portfolioCard"
 
 
 import intelHome from "../images/portfolio/intel.com-home-2022.png"
@@ -18,89 +19,112 @@ const PortfolioPage = () => {
   return (
     <Layout pageTitle="Portfolio">
 
-      <div id="portfolio">
-        <section>
-          <h2>Portfolio</h2>
+      <section id="portfolio" aria-label="Portfolio">
+        <title>Portfolio</title>
+        {/* <h2>Portfolio</h2> */}
 
-          <p>Examples here are of projects that are, or were visible to the public.</p>
+        <p>Examples here are of projects that are, or were, visible to the public.</p>
 
-          <section>
-            <h3>Intel Home Page Update 2021+</h3>
+        <PortfolioCard>
+          <h3>Intel Home Page Update 2021+</h3>
 
-            <figure>
-              <img src={intelHome} alt="" />
+          <figure aria-hidden="true">
+            <img src={intelHome} alt="" />
 
-              <figcaption>Intel Home Page incremental update to be more modern, lightweight and accessible</figcaption>
-            </figure>
+            <figcaption>Intel Home Page incremental update to be more modern, lightweight and accessible</figcaption>
+          </figure>
 
-          </section>
-
-          <section>
-            <h3>Intel Contact Support 2021+</h3>
-
-            <figure>
-              <img src={intelContactSupport} alt="" />
-
-              <figcaption>Contact Support updated with improved accessibility, including keyboard support</figcaption>
-            </figure>
-
-          </section>
-
-          <section>
-            <h3>Download Center Pages 2021+</h3>
-
-            <figure>
-              <img src={intelDownloadCenterPages} alt="" />
-
-              <figcaption>Contact Support updated with improved accessibility, including keyboard support</figcaption>
-            </figure>
-          </section>
-
-          <section>
-            <h3>Malarkey Roofing via Harlo Interactive</h3>
-
-            <figure>
-              <img src={malarkeyHome} alt="" />
-
-              <figcaption>Malarkey home page</figcaption>
-            </figure>
-
+          <div className="description">
             <p>
-              Implemented three-level responsive site (desktop, tablet, mobile), based on design specifications. 
-              (Malarkey Roofing via Harlo Interactive)
+              Intel Home Page incremental update to be more modern, lightweight and accessible
             </p>
+          </div>
 
-            <figure>
-              <img src={malarkeyShingles} alt="" />
+        </PortfolioCard>
 
-              <figcaption>Shingle Selector app</figcaption>
-            </figure>
+        <PortfolioCard>
+          <h3>Intel Contact Support 2021+</h3>
 
+          <figure aria-hidden="true">
+            <img src={intelContactSupport} alt="" />
+
+            <figcaption>Contact Support updated with improved accessibility, including keyboard support</figcaption>
+          </figure>
+
+          <div className="description">
             <p>
-              Developed the Shingle Selector tool, a responsive tool (desktop, tablet, mobile) that allowed a user to browse information on a multitude of different shingle products.              
+              Contact Support updated with improved accessibility, including keyboard support              
             </p>
-          </section>
+          </div>
 
-          <section>
-            <h3>OregonGo.org</h3>
+        </PortfolioCard>
 
-            <figure>
-              <img src={oregonGo} alt="" />
+        <PortfolioCard>
+          <h3>Download Center Pages 2021+</h3>
 
-              <figcaption>Shingle Selector</figcaption>
-            </figure>
+          <figure aria-hidden="true">
+            <img src={intelDownloadCenterPages} alt="" />
 
-            <p>
-              Designed and developed independently with AngularJS and Bootstrap as an informational site for the local Go community.
-            </p>
-          </section>
+            <figcaption>Contact Support updated with improved accessibility, including keyboard support</figcaption>
+          </figure>
 
+          <div className="description"></div>
 
-          
+          <p>
+            Note: This does not include the hub page for the Download Center.  
+            I also provided instructions on how improve that page to those responsible.
+          </p>
 
-        </section>
+        </PortfolioCard>
 
-      </div>
+        <PortfolioCard>
+          <h3>Malarkey Roofing via Harlo Interactive</h3>
+
+          <figure aria-hidden="true">
+            <img src={malarkeyHome} alt="" />
+
+            <figcaption>Malarkey home page</figcaption>
+          </figure>
+
+          <div className="description"></div>
+
+          <p>
+            Implemented three-level responsive site (desktop, tablet, mobile), based on design specifications. 
+            (Malarkey Roofing via Harlo Interactive)
+          </p>
+
+          <figure>
+            <img src={malarkeyShingles} alt="" />
+
+            <figcaption>Shingle Selector app</figcaption>
+          </figure>
+
+          <div className="description"></div>
+
+          <p>
+            Developed the Shingle Selector tool, a responsive tool (desktop, tablet, mobile) 
+            that allowed a user to browse information on a multitude of different shingle products.              
+          </p>
+
+        </PortfolioCard>
+
+        <PortfolioCard>
+          <h3>OregonGo.org</h3>
+
+          <figure aria-hidden="true">
+            <img src={oregonGo} alt="" />
+
+            <figcaption>OregonGo.org</figcaption>
+          </figure>
+
+          <div className="description"></div>
+
+          <p>
+            Designed and developed independently with AngularJS and Bootstrap as an informational site for the local Go community.
+          </p>
+        </PortfolioCard>
+
+      </section>
 
     </Layout>
   )

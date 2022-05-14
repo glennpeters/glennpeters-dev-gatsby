@@ -37,10 +37,13 @@ header nav a {
     padding: 0.4rem 0.8rem;
     box-sizing: border-box;
     box-shadow: 0 5px 5px -5px rgba(255,255,255,0);
+    /* border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem; */
 }
 
 header nav a[aria-current="page"] {
     background-color: #0074d8;
+    color: #fff;
 }
 
 header nav a:hover,
@@ -48,6 +51,7 @@ header nav a:active,
 header nav a:focus {
     /* Reserving for different effects between hover/active and selected */
     background-color: #0074d8;
+    color: #fff;
 }
 
 header nav {

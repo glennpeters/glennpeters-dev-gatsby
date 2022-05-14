@@ -4,15 +4,16 @@ import React from "react"
 
 import Header from "./header"
 
+import '../css/normalize.css'
 import './layout.css'
 
 
-const Layout = ({ layoutClass, pageTitle, children }) => {
+const Layout = ({ pageTitle, layoutClass, children }) => {
   return (
     <>
       <Header pageTitle={pageTitle} className={layoutClass} />
 
-      <main>
+      <main className={layoutClass}>
         <div className="container">
           {children}
         </div>

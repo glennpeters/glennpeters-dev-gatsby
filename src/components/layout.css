@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Jura&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Jura|Source+Sans+Pro&display=swap');
 /* @import url('https://fonts.googleapis.com/css?family=Jura|Merriweather|Source+Sans+Pro&display=swap'); */
 
 /* ============================================================== *\
@@ -46,11 +47,13 @@ body {
 }
 
 html, body {
-    font-family: Jura, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Jura,  */
+    font-family: 'Source Sans Pro', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: Jura, 'Source Sans Pro', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 300;
 }
 
@@ -61,8 +64,8 @@ a:-webkit-any-link {
 }
 
 .container {
-    width: 100%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0;
 }
@@ -78,27 +81,39 @@ a:-webkit-any-link {
 main {
     padding: 1rem;
     margin: 0 0 3.5rem;
-    line-height: 1.35;
+    line-height: 1.5;
 }
 
 main figure {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    transition: all 0.5s ease-in-out;
 }
 
 main figure img {
     width: 100%;
-    /* border-radius: 0.8rem; */
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+
+main figure.portrait img {
+    border-radius: 1rem;
 }
 
 main h2 {
     margin: 0 0 1rem;
 }
 
+main .unstyled-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 main section {
-    margin: 1rem auto 1.5rem;
+    margin: 1rem auto 2.5rem;
 }
 
 main section h3 {
@@ -109,28 +124,25 @@ main section p {
     margin: 0 0 1rem;
 }
 
-main #portfolio figure {
-    width: 100%;
-    margin: 1rem auto 1.6rem;
-    text-align: center;
+
+/* Resume */
+
+main .job .info {
+    line-height: 1.1;
 }
 
-main #portfolio figure figcaption {
-    margin: 0.4rem auto;
-    font-size: 0.8rem;
+main .myInfo .unstyled-list {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
 }
 
-main #portfolio figure img {
-    width: 90%;
-    opacity: 0.8;
-    filter: grayscale(50%);
-    display: inline-block;
+main .myInfo .unstyled-list li {
+    /* display: inline; */
+    flex: 1 1 auto;
+    text-align: right;
 }
 
-main #portfolio figure:hover img {
-    opacity: 1;
-    filter: grayscale(0%);
-}
 
 footer {
     position: fixed;
@@ -142,6 +154,41 @@ footer {
     margin: 0;
     padding: 0.7rem 2rem;
     text-align: center;
+}
+
+
+/* Scrollbar, Scroll Thumb */
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: #edf2f4;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background: #005fb1; */
+    background: #6791a2;
+    -webkit-border-radius: 0.2rem;
+    /* -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75); */
+}
+
+::-webkit-scrollbar-corner {
+    background: #333;
+}
+
+
+/* ============================================================== *\
+ *
+ * Large Breakpoint
+ *
+\* ============================================================== */
+
+@media screen and (min-width: 600px) {
+    .about .portrait {
+        max-width: 16rem;
+        float: left;
+        margin: 0.5rem 2rem 2rem 0;
+    }
 }
 
 

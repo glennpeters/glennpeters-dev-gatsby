@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -8,15 +9,15 @@ import coastGlenn from "../images/2018-06-18_coast_glenn-crop-wide.jpg"
 const IndexPage = () => {
   return (
     // <main style={pageStyles}>
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle="Home Page" layoutClass="about">
       <title>About Glenn Peters</title>
-
-      <figure>
-        <img src={coastGlenn} alt="" />
-      </figure>
 
       <section>
         <h2>About Me</h2>
+
+        <figure class="portrait">
+          <img src={coastGlenn} alt="" />
+        </figure>
 
         <p>
           I am a front end web developer who has worked at 
@@ -48,6 +49,14 @@ const IndexPage = () => {
             allowing more detailed analysis of user flow.  
           </li>
         </ul>
+
+        <p>
+          To find out more about how this site was made, read the
+          {' '}
+          <Link to="/makingof">
+            making of
+          </Link>.
+        </p>
 
       </section>
     </Layout>

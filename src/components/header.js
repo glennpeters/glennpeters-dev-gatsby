@@ -23,15 +23,15 @@ const Header = ({ siteTitle }) => (
                         About
                     </Link>
                     <Link
-                        to="/portfolio"
-                    >
-                        Portfolio
-                    </Link>
-                    <Link
                         to="/resume"
                     >
                         R&eacute;sum&eacute;
                     </Link> 
+                    <Link
+                        to="/portfolio"
+                    >
+                        Portfolio
+                    </Link>
                 </div>
             </nav>
         </div>
