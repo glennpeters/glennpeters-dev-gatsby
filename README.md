@@ -16,7 +16,7 @@
 
 <h2>Design</h2>
 
-<style>
+<!-- <style style="display: none">
     .swatch {
         display: inline-block;
         height: 1.1rem;
@@ -46,17 +46,17 @@
         background-color: #edf2f4;
     }
 
-</style>
+</style> -->
 
 <ul>
     <li>
         <a href="https://www.color-hex.com/color-palette/84804">Color palette: Good Angel from color-hex.com</a>
         <ul>
-            <li><div class="swatch verydarkblue"></div> 	#00203b	(0,32,59)</li>
-            <li><div class="swatch darkblue"></div> 	#005fb1	(0,95,177)</li>
-            <li><div class="swatch midblue"></div> 	#0074d8	(0,116,216)</li>
-            <li><div class="swatch slateblue"></div> 	#6791a2	(103,145,162)</li>
-            <li><div class="swatch palebluish"></div> 	#edf2f4	(237,242,244)</li>
+            <li>#00203b	(0,32,59)</li>
+            <li>#005fb1	(0,95,177)</li>
+            <li>#0074d8	(0,116,216)</li>
+            <li>#6791a2	(103,145,162)</li>
+            <li>#edf2f4	(237,242,244)</li>
         </ul>
     </li>
 </ul>
