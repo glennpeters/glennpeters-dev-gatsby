@@ -20,14 +20,6 @@ header {
     background: transparent;
 } */
 
-header a {
-    color: #fff;
-    /* padding: 0.4rem 0.8rem; */
-    text-decoration: none;
-    display: inline-block;
-    transition: all .5s ease-in-out;
-}
-
 header h1 {
     /* Margin-top default was adding white block on the top of the page */
     margin: 0;
@@ -36,10 +28,23 @@ header h1 {
     padding: 0.3rem 0 0;
 }
 
+header a {
+    color: #fff;
+    /* padding: 0.4rem 0.8rem; */
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s ease-in-out;
+}
+
+header a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
 header nav a {
     padding: 0.4rem 0.8rem;
     box-sizing: border-box;
-    box-shadow: 0 5px 5px -5px rgba(255,255,255,0);
+    /* box-shadow: 0 5px 5px -5px rgba(255,255,255,0); */
     /* border-top-left-radius: 0.2rem;
     border-top-right-radius: 0.2rem; */
 }

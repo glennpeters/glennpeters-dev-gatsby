@@ -3,7 +3,7 @@ import React from "react"
 import './portfolioCard.css'
 
 const PortfolioCard = ({ children }) => (
-    <section className="portfolioCard">
+    <section className="portfolioCard innerBlock">
         {children}
     </section>
 )

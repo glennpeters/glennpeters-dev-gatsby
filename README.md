@@ -62,6 +62,9 @@
 </ul>
 
 
+<!-- http://localhost:8000/___loading-indicator/enable
+
+http://localhost:8000/___loading-indicator/disable -->
 
 
 <h2>Considering</h2>

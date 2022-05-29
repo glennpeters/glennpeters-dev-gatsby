@@ -4,7 +4,7 @@ import React from "react"
 
 import Header from "./header"
 
-import '../css/normalize.css'
+// import '../css/normalize.css'
 import './layout.css'
 
 

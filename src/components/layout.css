@@ -54,13 +54,13 @@ body {
 }
 
 html, body {
-    /* Jura,  */
-    /* font-family: 'Lato', 'Source Sans Pro', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /* font-family: Jura, 'Lato', 'Source Sans Pro', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: 'Lato', Verdana, Arial, Helvetica, sans-serif;
     color: #333;
     font-size: 1rem;
     font-weight: 400;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     /* 'Roboto Condensed',  */
@@ -133,6 +133,11 @@ main {
     line-height: 1.5;
 }
 
+.innerBlock {
+    background-color: #ccc;
+    border: 1px solid #333;
+}
+
 main figure {
     width: 100%;
     max-width: 1000px;
@@ -186,7 +191,12 @@ main ul li + li {
 }
 
 
-/* Footer */
+
+/* ============================================================== *\
+ *
+ * Footer
+ *
+\* ============================================================== */
 
 footer {
     position: fixed;
@@ -196,29 +206,67 @@ footer {
     background-color: #005fb1;
     color: #fff;
     margin: 0;
-    padding: 0.7rem 2rem;
-    text-align: center;
+    padding: 0.7rem 0;
+    text-align: right;
 }
 
 
-/* Scrollbar, Scroll Thumb */
+/* ============================================================== *\
+ *
+ * Scrollbar
+ *
+\* ============================================================== */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     height: 10px;
     width: 10px;
     background: #edf2f4;
 }
 
 ::-webkit-scrollbar-thumb {
-    /* background: #005fb1; */
+    background: #005fb1;
     background: #6791a2;
+    background: #333;
     -webkit-border-radius: 0.2rem;
-    /* -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75); */
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 }
 
 ::-webkit-scrollbar-corner {
     background: #333;
+} */
+
+/* ============================================================== *\
+ *
+ * Theme (Colors)
+ *
+\* ============================================================== */
+/* 
+body {
+    background-color: #000;
+    color: #fff;
 }
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.innerBlock {
+    background-color: #333;
+    border: 1px solid #666;
+}
+
+a {
+    color: cyan;
+}
+
+a:visited {
+    color: blue;
+} 
+
+footer {
+    background-color: #333;
+} */
 
 
 /* ============================================================== *\
