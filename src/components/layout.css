@@ -130,7 +130,7 @@ main a:hover, a:focus {
 main {
     padding: 1rem;
     margin: 0 0 3.5rem;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .innerBlock {
@@ -178,13 +178,9 @@ main section p {
     margin: 0 0 1rem;
 }
 
-main ul li + li {
-    line-height: 1.3;
-}
-
-main ul li + li {
+/* main ul li + li {
     margin-top: .3rem;
-}
+} */
 
 .note {
     font-style: italic;

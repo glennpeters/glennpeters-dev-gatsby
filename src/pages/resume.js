@@ -16,7 +16,7 @@ const ResumePage = () => {
               <a href="mailto:work@glennpeters.dev">work@glennpeters.dev</a>
             </li>
             <li className="location">
-                Remote | Portland, OR
+                Location: Portland, OR
             </li>
             {/* <li className="phone">
               <a href="tel:503-753-4919">503 753-4919</a>
