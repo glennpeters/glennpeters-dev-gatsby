@@ -26,13 +26,14 @@
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
+    font-size: 0.8rem;
 }
 
 .resume .myInfo .unstyled-list li {
     display: inline-flex;
     flex: 0 1 auto;
     justify-content: flex-end;
-    padding: 0.1rem 0 0.4rem;
+    padding: 0.1rem 0 0.1rem;
 }
 
 .resume h4 + ul {

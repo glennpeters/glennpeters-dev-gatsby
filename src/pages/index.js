@@ -51,8 +51,9 @@ const IndexPage = () => {
         </p>
 
         <p>
-          The sites I've worked on I&apos;ve both developed from scratch as well as legacy
-          site involving many teams.  I frequently learn new tech on the fly and am devoted 
+          I have developed sites from scratch (e.g. Facteus sites Fraud Analytix and Match Validation) 
+          and also worked on  legacy sites (e.g. DSV OneView, Intel.com).  
+          I frequently learn new technologies on the fly and am devoted 
           to finding the best solutions for both the client and the end user.  
         </p>
         
@@ -62,19 +63,25 @@ const IndexPage = () => {
 
         <ul>
           <li>
+            Updating the intel.com Home page (2021), Download Center content pages (2021), 
+            and Contact Support area (2021)
+          </li>
+          <li>
             A JavaScript SCORM wrapper 
             that allowed the sale of a developed set of courseware to the client when 
             the existing protocols didn&apos;t match the end client's Learning Management System.
-          </li>
-          <li>
-            Updating the intel.com Home page (2021), Download Center content pages (2021), 
-            and Contact Support area (2021)
           </li>
           <li>
             Implemented Google Analytics tracking in a micro-reward website, 
             allowing more detailed analysis of user flow.  
           </li>
         </ul>
+
+        <p>
+          In my spare time, I <a href="https://oregongo.org/" target="_blank" title="A site I developed for the Oregon Go community">play Go</a>  
+          and practice 
+          <a href="https://thinplaces.photo/" target="_blank" title="My personal curated site">photography</a>.
+        </p>
 
         {/* <p>
           To find out more about how this site was made, read the

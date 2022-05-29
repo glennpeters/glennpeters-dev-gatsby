@@ -160,13 +160,17 @@ main h2 {
     margin: 0 0 1rem;
 }
 
+main ul li + li {
+    padding: .5rem 0 0;
+}
+
 main .unstyled-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-main section {
+main > section {
     margin: 1rem auto 2.5rem;
 }
 
@@ -176,6 +180,15 @@ main section h3 {
 
 main section p {
     margin: 0 0 1rem;
+}
+
+/* Handle unfortunate whitespace collapse of links */
+p > a:before {
+    content: ' ';
+}
+
+p > a:after {
+    content: ' ';
 }
 
 /* main ul li + li {

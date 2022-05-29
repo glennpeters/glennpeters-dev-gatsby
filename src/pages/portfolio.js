@@ -47,7 +47,7 @@ const PortfolioPage = () => {
           <figure aria-hidden="true">
             <img src={intelContactSupport} alt="" />
 
-            <figcaption>Unified Contact Support pages</figcaption>
+            <figcaption>Unified Contact Support (Contact Intel)</figcaption>
           </figure>
 
           <div className="description">
@@ -74,7 +74,7 @@ const PortfolioPage = () => {
 
           <div className="description">
             <p>
-              <strong>Note:</strong>
+              <strong>Note:</strong> 
                This does not include the hub page for the Download Center.  
                (I also provided instructions and code on how improve that page to those responsible for that page.)
             </p>
