@@ -21,7 +21,6 @@ const PortfolioPage = () => {
 
       <section id="portfolio" aria-label="Portfolio">
         <title>Portfolio</title>
-        {/* <h2>Portfolio</h2> */}
 
         <p>Examples here are of projects that are, or were, visible to the public.</p>
 

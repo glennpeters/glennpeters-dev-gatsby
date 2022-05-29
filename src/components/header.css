@@ -23,6 +23,7 @@ header {
 header a {
     color: #fff;
     /* padding: 0.4rem 0.8rem; */
+    text-decoration: none;
     display: inline-block;
     transition: all .5s ease-in-out;
 }
@@ -31,6 +32,8 @@ header h1 {
     /* Margin-top default was adding white block on the top of the page */
     margin: 0;
     display: block;
+    letter-spacing: 0.1rem;
+    padding: 0.3rem 0 0;
 }
 
 header nav a {

@@ -2,68 +2,63 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 
+import '../css/resume.css'
+
 // markup
 const ResumePage = () => {
   return (
     <Layout pageTitle="Resume" layoutClass="resume">
         <title>Resume</title>
 
-        {/* <h2>Resume</h2> */}
-
         <section className="myInfo" aria-label="My Info">
           <ul className="unstyled-list">
+            <li className="mail">
+              <a href="mailto:work@glennpeters.dev">work@glennpeters.dev</a>
+            </li>
             <li className="location">
-                Portland, OR
+                Remote | Portland, OR
             </li>
             {/* <li className="phone">
               <a href="tel:503-753-4919">503 753-4919</a>
             </li> */}
-            <li className="mail">
-              <a href="mailto:work@glennpeters.dev">work@glennpeters.dev</a>
-            </li>
           </ul>
         </section>
 
         <section id="technologies">
           <h3>Technologies</h3>
 
-          <dl className="unstyled-list">
-            <dt>Languages and libraries</dt>
-            <dd>
-              HTML5, CSS3 (Responsive Design, Media Queries), 
+          <section>
+            <h4>Languages and libraries</h4>
+            <p>
+              HTML5, CSS3 (Responsive, Media Queries), 
               LESS, SASS, JavaScript 
               (including jQuery, React, Vue, Angular, Knockout, Greensock, 
               Handlebars, etc.), 
               SQL, PHP, Perl
-            </dd>
-            {/* <li>
-              <strong>Platforms</strong>
-              Macintosh, Windows, Unix / Linux
-            </li> */}
-            <dt>Tools and Protocols</dt>
-            <dd>
+            </p>
+          </section>
+          <section>
+            <h4>Tools and Protocols</h4>
+            <p>
               VS Code, Visual Studio, 
               Jira/Atlassian Suite, Snowflake, 
               mySQL, SQL Server, 
               SQL Developer, Oracle, IIS, Apache, Photoshop,
               Tableau, Git, Visual SourceSafe, CVS, Subversion
-            </dd>
-          </dl>
+            </p>
+          </section>
         </section>
 
         <section id="workExperience">
 
           <h3>Work Experience</h3>
 
-          <div className="job">
-            <div className="info">
-              <div className="company">
-                Artech
-              </div>
-              <div className="position">
-                <div className="title">Developer (contract)</div>
-                <div className="dates">January 2020 - April 2022</div>
-              </div>
+          <section className="job">
+            <h4>Artech LLC</h4>
+
+            <div className="position">
+              <div className="title">Developer (contract)</div>
+              <div className="dates">January 2020 - April 2022</div>
             </div>
 
             <ul>
@@ -87,17 +82,15 @@ const ResumePage = () => {
                 </ul>
               </li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job">
-            <div className="info">
-              <div className="company">
-                PCD Group
-              </div>
-              <div className="position">
-                <div className="title">Developer (contract)</div>
-                <div className="dates">April 2019 - June 2019</div>
-              </div>
+          <section className="job">
+            <h4>PCD Group</h4>
+
+            <div className="position">
+              <div className="role">Contract</div>
+              <div className="title">Developer</div>
+              <div className="dates">April 2019 - June 2019</div>
             </div>
 
             <ul>
@@ -106,17 +99,14 @@ const ResumePage = () => {
                 integration with a focus on 503 compliance. (JavaScript, SVG, jQuery, CSS3, SASS, Perl)
               </li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job">
-            <div className="info">
-              <div className="company">
-                ARM Insight
-              </div>
-              <div className="position">
-                <div className="title">Senior UI Developer</div>
-                <div className="dates">April 2017 - February 2019</div>
-              </div>
+          <section className="job">
+            <h4>ARM Insight</h4>
+
+            <div className="position">
+              <div className="title">Senior UI Developer (direct hire)</div>
+              <div className="dates">April 2017 - February 2019</div>
             </div>
 
             <ul>
@@ -125,17 +115,14 @@ const ResumePage = () => {
               <li>Development of SecurLock Analytix website (JavaScript: VueJS, Vue Material, .Net, SQL Server)</li>
               <li>Development of Match Validation website (JavaScript: VueJS, Vue Material, .Net, SQL Server)</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job">
-            <div className="info">
-              <div className="company">
-                DSV
-              </div>
-              <div className="position">
-                <div className="title">Senior Software Engineer</div>
-                <div className="dates">August 2015 - December 2016</div>
-              </div>
+          <section className="job">
+            <h4>DSV</h4>
+
+            <div className="position">
+              <div className="title">Senior Software Engineer</div>
+              <div className="dates">August 2015 - December 2016</div>
             </div>
 
             <ul>
@@ -146,18 +133,15 @@ const ResumePage = () => {
             </ul>
 
             <p className="note">(UTi was purchased by DSV January 2016, department was eliminated December 2016.)</p>
-          </div>
+          </section>
 
-          <div className="job">
-            <div className="info">
-              <div className="company">
-                IGNW
-              </div>
-              <div className="position">
-                <div className="role">Ricochet Partners (contract)</div>
-                <div className="title">Web Developer</div>
-                <div className="dates">January 2015 - April 2015</div>
-              </div>
+          <section className="job">
+            <h4>IGNW</h4>
+
+            <div className="position">
+              <div className="role">Ricochet Partners (contract)</div>
+              <div className="title">Web Developer</div>
+              <div className="dates">January 2015 - April 2015</div>
             </div>
 
             <ul>
@@ -165,18 +149,15 @@ const ResumePage = () => {
               <li>Development of custom websites: Responsive page creation, Hubspot integration, customized jQuery plugins  (Expression Engine, Hubspot, HTML5, CSS3, Responsive Design, Media Queries, JavaScript, jQuery)</li>
               <li>Created and updated Hubspot landing pages and template (Hubspot, HTML5, CSS3 (Responsive Design, Media Queries), JavaScript, jQuery)</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job">
-            <div className="info">
-              <div className="company">
-                Razorfish
-              </div>
-              <div className="position">
-                <div className="role">Contract (direct)</div>
-                <div className="title">Senior Presentation Layer Engineer </div>
-                <div className="dates">October 2014 ~ June 2015</div>
-              </div>
+          <section className="job">
+            <h4>RazorFish</h4>
+
+            <div className="position">
+              <div className="role">Direct Contract</div>
+              <div className="title">Senior Presentation Layer Engineer </div>
+              <div className="dates">October 2014 ~ June 2015</div>
             </div>
 
             <ul>
@@ -187,18 +168,15 @@ const ResumePage = () => {
               <li>Updated advertisement site with new section including new animation and behaviors, both desktop/mobile, adding tracking, pushing site live
                 (Compass, JavaScript, jQuery, Greensock, Handlebars, HTML5, CSS3 (Responsive Design, Media Queries))</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job">
-            <div className="info">
-              <div className="company">
-                Vircon
-              </div>
-              <div className="position">
-                <div className="role">Harlo Interactive (contract)</div>
-                <div className="title">Web Developer</div>
-                <div className="dates">July 2014 - August 2014</div>
-              </div>
+          <section className="job">
+            <h4>Vircon</h4>
+
+            <div className="position">
+              <div className="role">Harlo Interactive (contract)</div>
+              <div className="title">Web Developer</div>
+              <div className="dates">July 2014 - August 2014</div>
             </div>
 
             <ul>
@@ -209,12 +187,10 @@ const ResumePage = () => {
               <li>Development of "shingle selector" responsive application</li>
             </ul>
 
-            <div className="info">
-              <div className="position">
-                <div className="role">PCD Group (contract)</div>
-                <div className="title">Software Engineer</div>
-                <div className="dates">August 2013 - July 2014</div>
-              </div>
+            <div className="position">
+              <div className="role">PCD Group (contract)</div>
+              <div className="title">Software Engineer</div>
+              <div className="dates">August 2013 - July 2014</div>
             </div>
 
             <ul>
@@ -226,86 +202,59 @@ const ResumePage = () => {
               (Frontend.  Using JavaScript, jQuery, HTML5, CSS3 – Responsive, Photoshop, Perl, Mojolicious, Template Toolkit,
               SASS, SQL, Handlebars, SVN)</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job">
-            <div className="info">
-              <div className="company">
-                Yesmail
-              </div>
-              <div className="position">
-                <div className="title">Web Developer</div>
-                <div className="dates">April 2013 - August 2013</div><br />
-                <div className="title">Contractor via Teksystems</div>
-                <div className="dates">September 2012 - January 2013</div>
-              </div>
-              <div className="address">
-                309 SW Sixth Avenue, Suite 700<br />
-                Portland, OR  97204
-              </div>
+          <section className="job">
+            <h4>Yesmail</h4>
+
+            <div className="position">
+              <div className="title">Web Developer</div>
+              <div className="dates">April 2013 - August 2013</div><br />
+              <div className="title">Contractor via Teksystems</div>
+              <div className="dates">September 2012 - January 2013</div>
             </div>
 
             <ul>
               <li>Created and modified e-mail messages in a high-pressure,
               fast-paced environment using custom server side coding and HTML
-              coded with very rigorous compliance standards. (JavaScript, HTML5, CSS3 – Responsive, Photoshop)</li>
+              coded with very rigorous compliance standards. (JavaScript, HTML5, CSS3 &mdash; Responsive, Photoshop)</li>
               <li>Developed process improvement tools (JavaScript, jQuery, HTML5, CSS3)</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
-            <div className="info">
-              <div className="company">
-                Floating Dock Comics
-              </div>
-              <div className="position">
-                <div className="title">Direct contract</div>
-                <div className="dates">2012</div>
-              </div>
-              {/* <div className="desc hidden">
-                Additional short term contract work, involving SCORM, PHP, JavaScript, jQuery, HTML, CSS, etc.
-              </div> */}
+          <section className="job extended">
+            <h4>Floating Dock Comics</h4>
+
+            <div className="position">
+              <div className="title">Direct contract</div>
+              <div className="dates">2012</div>
             </div>
 
             <ul>
-              <li>Developed online media reader, using jQuery/JavaScript with object oriented JavaScript, and AJAX-based DOM insertion (using JSON).</li>
+              <li>Developed online media reader, using JavaScript/jQuery with object oriented JavaScript, and AJAX-based DOM insertion (using JSON).</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
-            <div className="info">
-              <div className="company">
-                Sparta eBusiness
-              </div>
-              <div className="position">
-                <div className="title">Contractor</div>
-                <div className="dates">Spring 2012</div>
-              </div>
-              <div className="address">
-                10300 SW Greenburg Rd, Suite 180<br />
-                Portland, OR 97223
-              </div>
+          <section className="job extended">
+            <h4>Sparta eBusiness</h4>
+
+            <div className="position">
+              <div className="role">Direct Contract</div>
+              <div className="dates">Spring 2012</div>
             </div>
 
             <ul>
               <li>Developed interactions for update to major charity website (JavaScript, jQuery, mobile)</li>
               <li>jQuery front-end work, including form validation, custom jQuery plugin managing infinite slider/scroller (with mobile controls), YouTube video management.</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
-            <div className="info">
-              <div className="company">
-                Clarity Innovations
-              </div>
-              <div className="position">
-                <div className="title">Contractor</div>
-                <div className="dates">February 2011 - September 2011</div>
-              </div>
-              <div className="address">
-                1001 SE Water Avenue, Suite 250<br />
-                Portland, OR 97214
-              </div>
+          <section className="job extended">
+            <h4>Clarity Innovations</h4>
+
+            <div className="position">
+              <div className="role">Direct Contract</div>
+              <div className="dates">February 2011 - September 2011</div>
             </div>
 
             <ul>
@@ -313,64 +262,45 @@ const ResumePage = () => {
               <li>Created "caricature" model to allow users to select and save a customized avatar (JavaScript, jQuery, Drupal)</li>
               <li>Modified desktop application with C#, .Net</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
-            <div className="info">
-              <div className="company">
-                Capstone Technology
-              </div>
-              <div className="position">
-                <div className="title">Programmer Analyst</div>
-                <div className="dates">January 2010 - September 2010</div>
-              </div>
-              <div className="address">
-                416 Northeast Dallas Street<br />
-                Camas, WA 98607-2153
-              </div>
+          <section className="job extended">
+            <h4>Capstone Technology</h4>
+
+            <div className="position">
+              <div className="title">Programmer Analyst</div>
+              <div className="role">Contract, converted to full-time</div>
+              <div className="dates">January 2010 - September 2010</div>
             </div>
 
             <ul>
               <li>Working with team to develop new version of Learning Management software, using HTML, CSS, C#, ASP.NET, JavaScript, Telerik, and jQuery libraries.</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
-            <div className="info">
-              <div className="company">
-                OCP
-              </div>
-              <div className="position">
-                <div className="title">Contractor via Teksystems</div>
-                <div className="dates">June 2008 - Nov 2008</div>
-              </div>
-              <div className="address">
-                5536 Hassalo<br />
-                Portland, OR 97213
-              </div>
+          <section className="job extended">
+            <h4>TEKsystems</h4>
+
+            <div className="position">
+              <div className="title">Developer (contract)</div>
+              <div className="company">OCP</div>
+              <div className="dates">June 2008 - Nov 2008</div>
             </div>
 
             <ul>
               <li>Re-engineering sites using Drupal (OOP PHP5), HTML, CSS, JavaScript, jQuery, AJAX,
               JSON, and MySQL</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
-            <div className="info">
-              <div className="company">
-                Via Training, LLC
-              </div>
-              <div className="position">
-                <div className="title">Senior Software Engineer</div>
-                <div className="dates">April 2006 - Dec 2007</div><br />
-                <div className="title">Software Engineer</div>
-                <div className="dates">July 2003 - April 2006</div>
-              </div>
-              <div className="address">
-                1620 SW Taylor<br />
-                Portland, OR 97205
-              </div>
+          <section className="job extended">
+            <h4>Via Training, LLC</h4>
+
+            <div className="position">
+              <div className="title">Senior Software Engineer</div>
+              <div className="dates">April 2006 - Dec 2007</div>
+              <div className="title">Software Engineer</div>
+              <div className="dates">July 2003 - April 2006</div>
             </div>
 
             <ul>
@@ -391,17 +321,14 @@ const ResumePage = () => {
               <li>Primary support for Plone-based intranet</li>
               <li>Updated and debugged Microsoft sales content (Visual Studio)</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
-            <div className="info">
-              <div className="company">
-                CoreMedia Training Solutions
-              </div>
-              <div className="position">
-                <div className="title">Software Engineer</div>
-                <div className="dates">November 2001 - July 2003</div>
-              </div>
+          <section className="job extended">
+            <h4>CoreMedia Training Solutions</h4>
+
+            <div className="position">
+              <div className="title">Software Engineer</div>
+              <div className="dates">November 2001 - July 2003</div>
             </div>
 
             <ul>
@@ -410,9 +337,9 @@ const ResumePage = () => {
               <li>Helped write administrative and e-mail application (PHP Fusebox)</li>
               <li>Expert SCORM panelist at ASTD Cascadia e-Learning Standards presentation</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
+          <section className="job extended">
             <div className="info">
               <div className="company">
                 Oracle
@@ -430,17 +357,14 @@ const ResumePage = () => {
               <li>Created a series of web page demos for Oracle's Customer
               Loyalty program (JavaScript)</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
-            <div className="info">
-              <div className="company">
-                CMD
-              </div>
-              <div className="position">
-                <div className="title">Senior Consultant</div>
-                <div className="dates">July 2000 - January 2001</div>
-              </div>
+          <section className="job extended">
+            <h4>CMD</h4>
+
+            <div className="position">
+              <div className="title">Senior Consultant</div>
+              <div className="dates">July 2000 - January 2001</div>
             </div>
 
             <ul>
@@ -454,17 +378,14 @@ const ResumePage = () => {
               <li>Recreated Paxton/Patterson website, et al 
               (Cold Fusion, HTML, JavaScript)</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
-            <div className="info">
-              <div className="company">
-                Ledge Multimedia
-              </div>
-              <div className="position">
-                <div className="title">Senior Webmaster</div>
-                <div className="dates">February 1997 - November 1998</div>
-              </div>
+          <section className="job extended">
+            <h4>Ledge Multimedia</h4>
+
+            <div className="position">
+              <div className="title">Senior Webmaster</div>
+              <div className="dates">February 1997 - November 1998</div>
             </div>
 
             <ul>
@@ -478,12 +399,14 @@ const ResumePage = () => {
               <li>Designed and supervised creation of Intranet. (HTML,
               Photoshop)</li>
             </ul>
-          </div>
+          </section>
 
-          <div className="job extended">
+          <section className="job extended">
+            <h4>Creative Multimedia</h4>
+
             <div className="info">
               <div className="company">
-                Creative Multimedia
+                
               </div>
               <div className="position">
                 <div className="title">Graphics Production, Webmaster</div>
@@ -512,22 +435,20 @@ const ResumePage = () => {
               <li>Guest speaker at PSU web development classes, 1997</li>
               <li>Managed Macintosh hardware and scanning room.</li>
             </ul>
-          </div>
         </section>
 
-        <section id="note" aria-label="Previous Experience">
-          <h3>Previous Experience Upon Request &mdash; including Oracle, CMD, and Via Training. </h3>
-        </section>
+        {/* <section id="note" aria-label="Previous Experience">
+          <h4>Previous Experience Upon Request &mdash; including Oracle, CMD, and Via Training. </h4>
+        </section> */}
 
         <section id="personal">
           <h3>Other Projects</h3>
 
-          <div className="job">
-            <div className="info">
-              <div className="company">
-                Portland Go Club
-              </div>
-            </div>
+          <section className="job">
+            <h4>
+              Portland Go Club
+            </h4>
+
             <ul>
               <li>
                 Designed and created (and hosted) 
@@ -536,19 +457,21 @@ const ResumePage = () => {
                 local Go community (Angular, Bootstrap, HTML, CSS, PHP)
               </li>
             </ul>
-          </div>
+          </section>
+        </section>
         </section>
 
-        <section id="education">
+        {/* <section id="education">
           <h3>Education</h3>
 
           <ul>
-            <strong className="mobile-block">Hampshire College</strong> {' '}
+            <h4 className="mobile-block">Hampshire College</h4>
+            <p></p>
             1989-1991
             
             <p>Concentration in Computer Communications</p>
           </ul>
-        </section>
+        </section> */}
 
     </Layout>
   )

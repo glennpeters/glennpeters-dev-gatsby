@@ -1,9 +1,15 @@
 import * as React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
 import coastGlenn from "../images/2018-06-18_coast_glenn-crop-wide.jpg"
+
+import coastGlennSM from "../images/glenn-code-2022-sm.png" // instrinsic 400x400
+import coastGlennMD from "../images/glenn-code-2022-md.png" // instrinsic 923 x 738
+import coastGlennLG from "../images/glenn-code-2022-lg.png" // instrinsic 1312 x 738
+import coastGlennXL from "../images/glenn-code-2022-xl.png" // instrinsic 1920 x 738
+
 
 // markup
 const IndexPage = () => {
@@ -13,15 +19,35 @@ const IndexPage = () => {
       <title>About Glenn Peters</title>
 
       <section>
-        <h2>About Me</h2>
+        <figure class="portrait" aria-hidden="true">
+          <img src={coastGlennXL} alt="" />
 
-        <figure class="portrait">
-          <img src={coastGlenn} alt="" />
+          {/* https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#how_do_you_create_responsive_images */}
+          {/* <img srcset="{coastGlennSM} 400w,
+                       {coastGlennMD} 923w,
+                       {coastGlennLG} 1312w,
+                       {coastGlennXL} 1920w"
+                sizes="400w, (max-width: 600px) 480px, 800px"
+                src="{coastGlennSM}"
+                alt=""></img> */}
+          {/* <picture>
+            <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
+            <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+            <img src="{coastGlennMD}" alt="" />
+          </picture> */}
         </figure>
 
         <p>
-          I am a front end web developer who has worked at 
-          large companies such as Intel, DSV, and Oracle as well as small to mid-size startups and agencies.  
+          I am an engineer, developer, programmer and coder.
+        </p>
+
+        <p>
+          I currently focus on the front end of web development (HTML, CSS, JavaScript), but I have had 
+          experience developing on the deeper layers with .Net, PHP, and Perl.
+
+          
+          I've worked a wide range of company sizes and environments 
+          from Intel, DSV, and Oracle to mid-size startups and agencies.  
         </p>
 
         <p>
@@ -50,13 +76,13 @@ const IndexPage = () => {
           </li>
         </ul>
 
-        <p>
+        {/* <p>
           To find out more about how this site was made, read the
           {' '}
           <Link to="/makingof">
             making of
           </Link>.
-        </p>
+        </p> */}
 
       </section>
     </Layout>
