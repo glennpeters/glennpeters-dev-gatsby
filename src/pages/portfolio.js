@@ -35,7 +35,7 @@ const PortfolioPage = () => {
 
           <div className="description">
             <p>
-              Intel Home Page incremental update to be more modern, lightweight and accessible
+              Intel Home Page incremental update to be more modern, lightweight and accessible.
             </p>
           </div>
 
@@ -47,12 +47,17 @@ const PortfolioPage = () => {
           <figure aria-hidden="true">
             <img src={intelContactSupport} alt="" />
 
-            <figcaption>Contact Support updated with improved accessibility, including keyboard support</figcaption>
+            <figcaption>Unified Contact Support pages</figcaption>
           </figure>
 
           <div className="description">
             <p>
-              Contact Support updated with improved accessibility, including keyboard support              
+              Contact Support updated with improved accessibility, including keyboard support.            
+            </p>
+
+            <p>
+              Decided by stakeholders that this should be Best Known Practice ongoing for developing 
+              Intel pages.
             </p>
           </div>
 
@@ -64,13 +69,18 @@ const PortfolioPage = () => {
           <figure aria-hidden="true">
             <img src={intelDownloadCenterPages} alt="" />
 
-            <figcaption>Contact Support updated with improved accessibility, including keyboard support</figcaption>
+            <figcaption>Download Center detail pages</figcaption>
           </figure>
 
           <div className="description">
             <p>
-              Note: This does not include the hub page for the Download Center.  
-              I also provided instructions on how improve that page to those responsible.
+              <strong>Note:</strong>
+               This does not include the hub page for the Download Center.  
+               (I also provided instructions and code on how improve that page to those responsible for that page.)
+            </p>
+
+            <p>
+              Improved accessibility and design, inlcuding modal window.
             </p>
           </div>
 
@@ -82,13 +92,12 @@ const PortfolioPage = () => {
           <figure aria-hidden="true">
             <img src={malarkeyHome} alt="" />
 
-            <figcaption>Malarkey home page</figcaption>
+            <figcaption>Malarkey.com home page</figcaption>
           </figure>
 
           <div className="description">
             <p>
-              Implemented three-level responsive site (desktop, tablet, mobile), based on design specifications. 
-              (Malarkey Roofing via Harlo Interactive)
+              Implemented three-level responsive site (desktop, tablet, mobile), based on design specifications.
             </p>
           </div>
 
@@ -102,7 +111,8 @@ const PortfolioPage = () => {
           <div className="description">
             <p>
               Developed the Shingle Selector tool, a responsive tool (desktop, tablet, mobile) 
-              that allowed a user to browse information on a multitude of different shingle products.              
+              that allowed a user to browse information on a multitude of different shingle products and colors. 
+              Consuming data provided by Laravel backend.             
             </p>
           </div>
 
