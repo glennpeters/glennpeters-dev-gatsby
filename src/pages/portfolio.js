@@ -67,12 +67,12 @@ const PortfolioPage = () => {
             <figcaption>Contact Support updated with improved accessibility, including keyboard support</figcaption>
           </figure>
 
-          <div className="description"></div>
-
-          <p>
-            Note: This does not include the hub page for the Download Center.  
-            I also provided instructions on how improve that page to those responsible.
-          </p>
+          <div className="description">
+            <p>
+              Note: This does not include the hub page for the Download Center.  
+              I also provided instructions on how improve that page to those responsible.
+            </p>
+          </div>
 
         </PortfolioCard>
 
@@ -85,12 +85,13 @@ const PortfolioPage = () => {
             <figcaption>Malarkey home page</figcaption>
           </figure>
 
-          <div className="description"></div>
+          <div className="description">
+            <p>
+              Implemented three-level responsive site (desktop, tablet, mobile), based on design specifications. 
+              (Malarkey Roofing via Harlo Interactive)
+            </p>
+          </div>
 
-          <p>
-            Implemented three-level responsive site (desktop, tablet, mobile), based on design specifications. 
-            (Malarkey Roofing via Harlo Interactive)
-          </p>
 
           <figure>
             <img src={malarkeyShingles} alt="" />
@@ -98,12 +99,13 @@ const PortfolioPage = () => {
             <figcaption>Shingle Selector app</figcaption>
           </figure>
 
-          <div className="description"></div>
+          <div className="description">
+            <p>
+              Developed the Shingle Selector tool, a responsive tool (desktop, tablet, mobile) 
+              that allowed a user to browse information on a multitude of different shingle products.              
+            </p>
+          </div>
 
-          <p>
-            Developed the Shingle Selector tool, a responsive tool (desktop, tablet, mobile) 
-            that allowed a user to browse information on a multitude of different shingle products.              
-          </p>
 
         </PortfolioCard>
 
@@ -116,11 +118,12 @@ const PortfolioPage = () => {
             <figcaption>OregonGo.org</figcaption>
           </figure>
 
-          <div className="description"></div>
+          <div className="description">
+            <p>
+              Designed and developed independently with AngularJS and Bootstrap as an informational site for the local Go community.
+            </p>
+          </div>
 
-          <p>
-            Designed and developed independently with AngularJS and Bootstrap as an informational site for the local Go community.
-          </p>
         </PortfolioCard>
 
       </section>
