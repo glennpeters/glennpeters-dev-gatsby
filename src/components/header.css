@@ -38,20 +38,29 @@ header a {
 
 header a:visited {
     color: #fff;
-    text-decoration: none;
 }
 
-header nav a {
+header h1 a:visited,
+header h1 a:hover,
+header h1 a:active,
+header h1 a:focus {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav {
+    width: 100%;
+    text-align: right;
+}
+
+header nav a:link,
+header nav a:visited {
     padding: 0.4rem 0.8rem;
     box-sizing: border-box;
     /* box-shadow: 0 5px 5px -5px rgba(255,255,255,0); */
     /* border-top-left-radius: 0.2rem;
     border-top-right-radius: 0.2rem; */
-}
-
-header nav a[aria-current="page"] {
-    background-color: #0074d8;
-    color: #fff;
+    text-decoration: none;
 }
 
 header nav a:hover,
@@ -60,9 +69,11 @@ header nav a:focus {
     /* Reserving for different effects between hover/active and selected */
     background-color: #0074d8;
     color: #fff;
+    text-decoration: none;
 }
 
-header nav {
-    width: 100%;
-    text-align: right;
+header nav a[aria-current="page"] {
+    background-color: #0074d8;
+    color: #fff;
+    text-decoration: none;
 }
