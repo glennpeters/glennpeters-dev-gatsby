@@ -133,9 +133,9 @@ main {
     line-height: 1.4;
 }
 
-.innerBlock {
+.card {
     background-color: #ccc;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
 }
 
 main figure {
@@ -269,7 +269,7 @@ header {
     color: #fff;
 }
 
-.innerBlock {
+.card {
     background-color: #333;
     border: 1px solid #666;
 }
