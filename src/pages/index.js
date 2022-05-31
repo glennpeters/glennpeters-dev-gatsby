@@ -3,12 +3,14 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 
-import coastGlenn from "../images/2018-06-18_coast_glenn-crop-wide.jpg"
+// import coastGlenn from "../images/2018-06-18_coast_glenn-crop-wide.jpg"
 
-import coastGlennSM from "../images/glenn-code-2022-sm.png" // instrinsic 400x400
-import coastGlennMD from "../images/glenn-code-2022-md.png" // instrinsic 923 x 738
-import coastGlennLG from "../images/glenn-code-2022-lg.png" // instrinsic 1312 x 738
-import coastGlennXL from "../images/glenn-code-2022-xl.png" // instrinsic 1920 x 738
+import coastGlennSM from "../images/glenn-code-2022-sm.png" // instrinsic 400 x 400
+// import coastGlennMD from "../images/glenn-code-2022-md.png" // instrinsic 923 x 738
+// import coastGlennLG from "../images/glenn-code-2022-lg.png" // instrinsic 1312 x 738
+// import coastGlennXL from "../images/glenn-code-2022-xl.png" // instrinsic 1920 x 738
+
+import coastGlennWide from "../images/glenn-code-2022-wide.png" // instrinsic 800 x 198
 
 
 // markup
@@ -19,8 +21,12 @@ const IndexPage = () => {
       <title>About Glenn Peters</title>
 
       <section>
-        <figure class="portrait" aria-hidden="true">
-          <img src={coastGlennXL} alt="" />
+        <figure className="portrait" aria-hidden="true">
+          <img src={coastGlennSM} className="responsive show-sm" alt="" />
+          {/* <img src={coastGlennMD} className="responsive show-md" alt="" /> */}
+          {/* <img src={coastGlennLG} className="responsive show-lg" alt="" /> */}
+          <img src={coastGlennWide} className="responsive show-lg" alt="" />
+          {/* <img src={coastGlennXL} className="responsive show-xl" alt="" /> */}
 
           {/* https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#how_do_you_create_responsive_images */}
           {/* <img srcset="{coastGlennSM} 400w,

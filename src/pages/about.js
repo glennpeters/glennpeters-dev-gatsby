@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 const AboutPage = () => {
   return (
     <Layout pageTitle="About this Site">
-        <h2>About this Site</h2>
+        <title>About this Site</title>
 
         <p>
            This page was written in <a href="https://www.gatsbyjs.org">Gatsby</a>, a React framework.

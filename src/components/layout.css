@@ -114,7 +114,7 @@ main a:hover, a:focus {
 
 .container {
     width: 90%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0;
 }
@@ -128,8 +128,8 @@ main a:hover, a:focus {
 
 
 main {
-    padding: 1rem;
-    margin: 0 0 3.5rem;
+    padding: 2rem 1rem 3.5rem;
+    margin: 0;
     line-height: 1.4;
 }
 
@@ -152,9 +152,9 @@ main figure img {
     margin: 0;
 }
 
-/* main figure.portrait img {
-    border-radius: 1rem;
-} */
+main figure.portrait img {
+    margin: 0 auto 1.6rem;
+}
 
 main h2 {
     margin: 0 0 1rem;
@@ -199,6 +199,15 @@ p > a:after {
     font-style: italic;
 }
 
+/* figure.portrait
+responsive img-sm
+responsive img-md
+responsive img-lg
+responsive img-xl */
+
+img.responsive {
+    display: none;
+}
 
 
 /* ============================================================== *\
@@ -278,21 +287,62 @@ footer {
 } */
 
 
+
+/* ============================================================== *\
+ *
+ * Responsive Images
+ *
+\* ============================================================== */
+
+img.responsive {
+    display: none;
+}
+
+
+/* ============================================================== *\
+ *
+ * Breakpoint Ranges
+ *
+\* ============================================================== */
+
+@media screen and (max-width: 400px) {
+    img.responsive.show-sm {
+        display: block;
+    }
+}
+
+/* Removed larger sizes because of container constraint */
+/* @media screen and (min-width: 401px) and (min-width: 800px) {
+    img.responsive.show-md {
+        display: block;
+    }
+} */
+
+@media screen and (min-width: 401px) {
+    img.responsive.show-lg {
+        display: block;
+    }
+}
+
+/* @media screen and (min-width: 1201px) {
+    img.responsive.show-xl {
+        display: block;
+    }
+} */
+
+
+
 /* ============================================================== *\
  *
  * Large Breakpoint
  *
 \* ============================================================== */
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
     .about .portrait {
-        /* max-width: 16rem; */
-        /* float: left; */
-        /* margin: 0.5rem 1rem 3rem 0; */
-
         margin: 0 auto 1rem;
     }
-}
+} */
 
 
 /* ============================================================== *\
