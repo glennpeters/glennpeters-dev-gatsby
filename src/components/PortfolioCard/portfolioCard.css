@@ -1,6 +1,6 @@
 
 .portfolioCard {
-    padding: 1rem 2rem;
+    padding: 1rem;
     margin: 0 auto 3rem;
 }
 
@@ -24,23 +24,18 @@ figure {
 }
 
 figure img {
-    /* width: 90%; */
-    /* opacity: 0.9; */
-    /* filter: grayscale(20%); */
-    display: inline-block;
+    display: block;
 }
 
-/* main #portfolio figure:hover img {
-    opacity: 1;
-    filter: grayscale(0%);
-} */
-/* 
-main #portfolio .description {
-    margin: 0 auto 2rem;
-} */
-
 figure figcaption {
-    margin: 0.2rem auto;
+    margin: 0 auto 1rem;
+    padding: 0.4rem;
     font-size: 0.8rem;
     font-style: oblique;
+    background-color: #00203b;
+    color: #fff;
+}
+
+p + figure {
+    margin-top: 2rem;
 }
