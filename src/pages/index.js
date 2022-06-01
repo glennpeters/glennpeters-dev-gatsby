@@ -44,21 +44,21 @@ const IndexPage = () => {
         </figure>
 
         <p>
-          I am an engineer, developer, programmer and coder.
+          I am an engineer, developer, programmer and coder.  All these skills are filtered through 
+          a passion for providing an excellent user experience.
         </p>
 
         <p>
           I currently focus on the front end of web development (HTML, CSS, JavaScript), but I have had 
           experience developing on the deeper layers with .Net, PHP, and Perl.
-
           
           I've worked a wide range of company sizes and environments 
           from Intel, DSV, and Oracle to mid-size startups and agencies.  
         </p>
 
         <p>
-          I have developed sites from scratch (e.g. Facteus sites Fraud Analytix and Match Validation) 
-          and also worked on  legacy sites (e.g. DSV OneView, Intel.com).  
+          I have developed sites from scratch (e.g. Facteus sites Fraud Analytix and Match Validation).
+          I've also worked on legacy sites (e.g. DSV OneView, Intel.com).  
           I frequently learn new technologies on the fly and am devoted 
           to finding the best solutions for both the client and the end user.  
         </p>
