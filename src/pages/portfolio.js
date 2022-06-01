@@ -27,7 +27,8 @@ const PortfolioPage = () => {
         <PortfolioCard>
           <h3>Intel Home Page Update 2021+</h3>
 
-          <figure aria-hidden="true">
+          <figure aria-hidden="true" className="fadeIn">
+            <link rel="preload" href={intelHome} as="image" />
             <img src={intelHome} alt="" />
 
             <figcaption>Intel Home Page incremental update to be more modern, lightweight and accessible</figcaption>
@@ -44,7 +45,8 @@ const PortfolioPage = () => {
         <PortfolioCard>
           <h3>Intel Contact Support 2021+</h3>
 
-          <figure aria-hidden="true">
+          <figure aria-hidden="true" className="fadeIn">
+            <link rel="preload" href={intelContactSupport} as="image" />
             <img src={intelContactSupport} alt="" />
 
             <figcaption>Unified Contact Support (Contact Intel)</figcaption>
@@ -66,7 +68,8 @@ const PortfolioPage = () => {
         <PortfolioCard>
           <h3>Download Center Pages 2021+</h3>
 
-          <figure aria-hidden="true">
+          <figure aria-hidden="true" className="fadeIn">
+            <link rel="preload" href={intelDownloadCenterPages} as="image" />
             <img src={intelDownloadCenterPages} alt="" />
 
             <figcaption>Download Center detail pages</figcaption>
@@ -89,7 +92,8 @@ const PortfolioPage = () => {
         <PortfolioCard>
           <h3>Malarkey Roofing via Harlo Interactive</h3>
 
-          <figure aria-hidden="true">
+          <figure aria-hidden="true" className="fadeIn">
+            <link rel="preload" href={malarkeyHome} as="image" />
             <img src={malarkeyHome} alt="" />
 
             <figcaption>Malarkey.com home page</figcaption>
@@ -102,7 +106,8 @@ const PortfolioPage = () => {
           </div>
 
 
-          <figure>
+          <figure aria-hidden="true" className="fadeIn">
+            <link rel="preload" href={malarkeyShingles} as="image" />
             <img src={malarkeyShingles} alt="" />
 
             <figcaption>Shingle Selector app</figcaption>
@@ -123,6 +128,7 @@ const PortfolioPage = () => {
           <h3>OregonGo.org</h3>
 
           <figure aria-hidden="true">
+            <link rel="preload" href={oregonGo} as="image" />
             <img src={oregonGo} alt="" />
 
             <figcaption>OregonGo.org</figcaption>

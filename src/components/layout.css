@@ -2,7 +2,6 @@
 /* @import url('https://fonts.googleapis.com/css?family=Jura&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css?family=Jura|Source+Sans+Pro&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css?family=Jura|Merriweather|Source+Sans+Pro&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Jura|Merriweather|Roboto+Condensed:wght@300;400;700|Source+Sans+Pro:ital,wght@0,200;0,400;0,600;1,400&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;1,400&display=swap'); */
 
@@ -54,7 +53,6 @@ body {
 }
 
 html, body {
-    /* font-family: Jura, 'Lato', 'Source Sans Pro', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: 'Lato', Verdana, Arial, Helvetica, sans-serif;
     color: #333;
     font-size: 1rem;
@@ -63,7 +61,6 @@ html, body {
 
 
 h1, h2, h3, h4, h5, h6 {
-    /* 'Roboto Condensed',  */
     font-family: 'Lato', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 300;
     margin: 0;
@@ -135,7 +132,6 @@ main {
 
 .card {
     background-color: #ccc;
-    /* border: 1px solid #333; */
 }
 
 main figure {
@@ -150,6 +146,8 @@ main figure img {
     transition: all 0.5s ease-in-out;
     padding: 0;
     margin: 0;
+    min-height: 150px;
+    min-width: 300px;
 }
 
 main figure.portrait img {
@@ -197,16 +195,6 @@ p > a:after {
 
 .note {
     font-style: italic;
-}
-
-/* figure.portrait
-responsive img-sm
-responsive img-md
-responsive img-lg
-responsive img-xl */
-
-img.responsive {
-    display: none;
 }
 
 
@@ -294,6 +282,13 @@ footer {
  *
 \* ============================================================== */
 
+
+/* figure.portrait
+responsive img-sm
+responsive img-md
+responsive img-lg
+responsive img-xl */
+
 img.responsive {
     display: none;
 }
@@ -347,6 +342,62 @@ img.responsive {
 
 /* ============================================================== *\
  *
+ * Animations
+ *
+\* ============================================================== */
+
+.fadeIn {
+    transition: all 0.5s ease-in;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { 
+        /* opacity: 0;  */
+        filter: blur(4px); 
+        filter: grayscale(1);
+        height: 0;
+    }
+    to { 
+        /* height: auto; */
+        opacity: 1; 
+        filter: blur(0);        /* No effect */
+        filter: grayscale(0);
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/* ============================================================== *\
+ *
  * Styles for print
  *
 \* ============================================================== */
@@ -355,7 +406,7 @@ img.responsive {
 {
 	header, footer
 	{
-    display: none;
+        display: none;
 	}
 
   .noPrint
@@ -366,7 +417,7 @@ img.responsive {
   @media not print {
     .onlyPrint
     {
-      display: none;
+        display: none;
     }
   }
   

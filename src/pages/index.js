@@ -20,8 +20,11 @@ const IndexPage = () => {
     <Layout pageTitle="Home Page" layoutClass="about">
       <title>About Glenn Peters</title>
 
+      <link rel="preload" href={coastGlennSM} as="image" media="(max-width: 400px)" />
+      <link rel="preload" href={coastGlennWide} as="image" media="(min-width: 401px)" />
+
       <section>
-        <figure className="portrait" aria-hidden="true">
+        <figure className="portrait fadeIn" aria-hidden="true">
           <img src={coastGlennSM} className="responsive show-sm" alt="" />
           {/* <img src={coastGlennMD} className="responsive show-md" alt="" /> */}
           {/* <img src={coastGlennLG} className="responsive show-lg" alt="" /> */}
