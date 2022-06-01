@@ -2,19 +2,20 @@
 .portfolioCard {
     padding: 1rem;
     margin: 0 auto 3rem;
+    padding: 1rem 1.5rem;
 }
 
 .description {
     margin: 0 auto;
-    padding: 1rem;
-}
-
-.portfolioCard p {
-    margin: 0;
 }
 
 .portfolioCard p + p {
     margin: 1rem 0 0;
+}
+
+/* Extra spacing in description */
+.portfolioCard .description + figure {
+    margin-top: 2rem;
 }
 
 figure {

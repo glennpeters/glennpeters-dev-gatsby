@@ -11,13 +11,20 @@ import intelDownloadCenterPages from "../images/portfolio/intelcom_download-cent
 import oregonGo from "../images/portfolio/oregongo_2019-07-17.png"
 
 import malarkeyHome from "../images/portfolio/MalarkeyRoofing_Screen-Shot_2015-04-20.png"
-import malarkeyShingles from "../images/portfolio/MalarkeyRoofing_Screen-Shot_2015-04-20.png"
+import malarkeyShingles from "../images/portfolio/Shingle-Selector_Screen-Shot_2015-06-18.png"
 
 
 // markup
 const PortfolioPage = () => {
   return (
     <Layout pageTitle="Portfolio">
+
+      <link rel="preload" href={intelHome} as="image" />
+      <link rel="preload" href={intelContactSupport} as="image" />
+      <link rel="preload" href={intelDownloadCenterPages} as="image" />
+      <link rel="preload" href={malarkeyHome} as="image" />
+      <link rel="preload" href={malarkeyShingles} as="image" />
+      <link rel="preload" href={oregonGo} as="image" />
 
       <section id="portfolio" aria-label="Portfolio">
         <title>Portfolio</title>
@@ -28,7 +35,6 @@ const PortfolioPage = () => {
           <h3>Intel Home Page Update 2021+</h3>
 
           <figure aria-hidden="true" className="fadeIn">
-            <link rel="preload" href={intelHome} as="image" />
             <img src={intelHome} alt="" />
 
             <figcaption>Intel Home Page incremental update to be more modern, lightweight and accessible</figcaption>
@@ -46,7 +52,6 @@ const PortfolioPage = () => {
           <h3>Intel Contact Support 2021+</h3>
 
           <figure aria-hidden="true" className="fadeIn">
-            <link rel="preload" href={intelContactSupport} as="image" />
             <img src={intelContactSupport} alt="" />
 
             <figcaption>Unified Contact Support (Contact Intel)</figcaption>
@@ -69,7 +74,6 @@ const PortfolioPage = () => {
           <h3>Download Center Pages 2021+</h3>
 
           <figure aria-hidden="true" className="fadeIn">
-            <link rel="preload" href={intelDownloadCenterPages} as="image" />
             <img src={intelDownloadCenterPages} alt="" />
 
             <figcaption>Download Center detail pages</figcaption>
@@ -90,10 +94,9 @@ const PortfolioPage = () => {
         </PortfolioCard>
 
         <PortfolioCard>
-          <h3>Malarkey Roofing via Harlo Interactive</h3>
+          <h3>Malarkey Roofing</h3>
 
           <figure aria-hidden="true" className="fadeIn">
-            <link rel="preload" href={malarkeyHome} as="image" />
             <img src={malarkeyHome} alt="" />
 
             <figcaption>Malarkey.com home page</figcaption>
@@ -107,7 +110,6 @@ const PortfolioPage = () => {
 
 
           <figure aria-hidden="true" className="fadeIn">
-            <link rel="preload" href={malarkeyShingles} as="image" />
             <img src={malarkeyShingles} alt="" />
 
             <figcaption>Shingle Selector app</figcaption>
@@ -128,7 +130,6 @@ const PortfolioPage = () => {
           <h3>OregonGo.org</h3>
 
           <figure aria-hidden="true">
-            <link rel="preload" href={oregonGo} as="image" />
             <img src={oregonGo} alt="" />
 
             <figcaption>OregonGo.org</figcaption>

@@ -47,16 +47,18 @@ const IndexPage = () => {
         </figure>
 
         <p>
-          I am an engineer, developer, programmer and coder.  All these skills are filtered through 
-          a passion for providing an excellent user experience.
+          I'm an engineer with a focus on providing the best experience for the end user 
+          while satisfying all the business needs.
         </p>
 
         <p>
-          I currently focus on the front end of web development (HTML, CSS, JavaScript), but I have had 
+          I currently focus on the front end of web development (HTML, CSS, JavaScript), but I have 
           experience developing on the deeper layers with .Net, PHP, and Perl.
-          
+          </p>
+
+        <p>
           I've worked a wide range of company sizes and environments 
-          from Intel, DSV, and Oracle to mid-size startups and agencies.  
+          including Intel, DSV, and Oracle to mid-size startups and agencies.  
         </p>
 
         <p>
