@@ -101,9 +101,9 @@ const IndexPage = () => {
         </ul>
 
         <p>
-          In my spare time, I <a href="https://oregongo.org/" target="_blank" rel="noreferrer" title="A site I developed for the Oregon Go community">play Go</a>  
+          In my spare time, I <a href="https://oregongo.org/" target="_blank" rel="noreferrer" title="oregongo.org - A site I developed for the Oregon Go community">play Go</a>  
           and practice 
-          <a href="https://thinplaces.photo/" target="_blank" rel="noreferrer" title="My personal curated site">photography.</a>  (I made these sites, too.)
+          <a href="https://thinplaces.photo/" target="_blank" rel="noreferrer" title="thinplaces.photo - my personal curated site">photography.</a>  (I made these sites, too.)
         </p>
 
         {/* <p>
