@@ -26,7 +26,7 @@ const IndexPage = () => {
       <title>About Glenn Peters</title>
 
       {/* <link rel="preload" href={whiteGlenn400} as="image" media="(max-width: 400px)" /> */}
-      <link rel="preload" href={whiteGlenn800} as="image" media="(min-width: 401px)" />
+      <link rel="preload" href={whiteGlenn800} as="image" />
 
       <section>
         <figure className="portrait fadeIn" aria-hidden="true">
@@ -39,7 +39,7 @@ const IndexPage = () => {
           {/* <img src={whiteGlenn400} className="responsive show-sm" alt="" />
           <img src={whiteGlenn800} className="responsive show-lg" alt="" /> */}
 
-          <img src={whiteGlenn800} alt="" />
+          <img src={whiteGlenn800} alt="Hudson and cat with code" />
 
           {/* https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#how_do_you_create_responsive_images */}
           {/* <img srcset="{coastGlennSM} 400w,
