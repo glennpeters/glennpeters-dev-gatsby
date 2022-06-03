@@ -57,6 +57,7 @@ html, body {
     color: #333;
     font-size: 1rem;
     font-weight: 400;
+    line-height: 1.4;
 }
 
 
@@ -64,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 300;
     margin: 0;
+    line-height: 1.6;
 }
 
 h1 {
@@ -74,9 +76,26 @@ h1 {
 h2 {
     font-size: 1.4rem;
 }
-
+/* 
 h3 {
     font-size: 1.2rem;
+} */
+
+h3 {
+    /* background-color: #6791a2;
+    color: #fff; */
+
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: .1em;
+
+    padding: 0.5em 0 0;
+    margin: 0 0 0.7em;
+    border-bottom: 1px solid rgba(200,200,200,0.8);
+
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 0; */
 }
 
 h4, h5, h6 {
@@ -127,7 +146,6 @@ main a:hover, a:focus {
 main {
     padding: 2rem 1rem 3.5rem;
     margin: 0;
-    line-height: 1.4;
 }
 
 .card {
@@ -149,8 +167,18 @@ main figure img {
     min-height: 150px;
 }
 
-main figure.portrait img {
+main figure.portrait {
     margin: 0 auto 1.6rem;
+    overflow-x: hidden;
+    position: relative;
+    height: 200px;
+}
+
+main figure.portrait img {
+    position: absolute;
+    height: 200px;
+    width: 800px;
+    right: 0;
 }
 
 main h2 {
@@ -188,12 +216,12 @@ p > a:after {
     content: ' ';
 }
 
-/* main ul li + li {
-    margin-top: .3rem;
-} */
-
 .note {
     font-style: italic;
+}
+
+.preface {
+    margin: 0 0 2rem;
 }
 
 
@@ -348,19 +376,19 @@ img.responsive {
 .fadeIn {
     transition: all 0.5s ease-in;
 
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
 }
 
 @keyframes fadein {
     from { 
-        /* opacity: 0;  */
+        opacity: 0; 
         filter: blur(4px); 
         filter: grayscale(0.5);
-        height: 0;
+        /* height: 0; */
     }
     to { 
         /* height: auto; */
@@ -371,28 +399,68 @@ img.responsive {
 }
 
 /* Firefox < 16 */
-/* @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-} */
+@-moz-keyframes fadein {
+    from { 
+        opacity: 0; 
+        filter: blur(10px); 
+        filter: grayscale(0.5);
+        /* height: 0; */
+    }
+    to { 
+        opacity: 1; 
+        filter: blur(0);        /* No effect */
+        filter: grayscale(0);
+        /* height: auto; */
+    }
+}
 
 /* Safari, Chrome and Opera > 12.1 */
-/* @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-} */
+@-webkit-keyframes fadein {
+    from { 
+        opacity: 0; 
+        filter: blur(10px); 
+        filter: grayscale(0.5);
+        /* height: 0; */
+    }
+    to { 
+        opacity: 1; 
+        filter: blur(0);        /* No effect */
+        filter: grayscale(0);
+        /* height: auto; */
+    }
+}
 
 /* Internet Explorer */
-/* @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-} */
+@-ms-keyframes fadein {
+    from { 
+        opacity: 0; 
+        filter: blur(10px); 
+        filter: grayscale(0.5);
+        /* height: 0; */
+    }
+    to { 
+        opacity: 1; 
+        filter: blur(0);        /* No effect */
+        filter: grayscale(0);
+        /* height: auto; */
+    }
+}
 
 /* Opera < 12.1 */
-/* @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-} */
+@-o-keyframes fadein {
+    from { 
+        opacity: 0; 
+        filter: blur(10px); 
+        filter: grayscale(0.5);
+        height: 0;
+    }
+    to { 
+        opacity: 1; 
+        filter: blur(0);        /* No effect */
+        filter: grayscale(0);
+        height: auto;
+    }
+}
 
 
 /* ============================================================== *\
@@ -408,20 +476,21 @@ img.responsive {
         display: none;
 	}
 
-  .noPrint
-  {
-    display: none;
-  }
+    .noPrint
+    {
+        display: none;
+    }
+  
+    body 
+	{ 
+		background: #fff;
+	}
+}
 
-  @media not print {
+
+@media not print {
     .onlyPrint
     {
         display: none;
     }
-  }
-  
-  body 
-	{ 
-		background: #ffffff;
-	}
 }

@@ -29,7 +29,9 @@ const PortfolioPage = () => {
       <section id="portfolio" aria-label="Portfolio">
         <title>Portfolio</title>
 
-        <p>Examples here are of projects that are, or were, visible to the public.</p>
+        <div className="preface">
+          <p>Examples here are of projects that are, or were, visible to the public.</p>
+        </div>
 
         <PortfolioCard>
           <h3>Intel Home Page Update 2021+</h3>
@@ -81,7 +83,7 @@ const PortfolioPage = () => {
 
           <div className="description">
             <p>
-              <strong>Note:</strong> 
+              <strong>Note:</strong>{' '}
                This does not include the hub page for the Download Center.  
                (I also provided instructions and code on how improve that page to those responsible for that page.)
             </p>
@@ -99,7 +101,7 @@ const PortfolioPage = () => {
           <figure aria-hidden="true" className="fadeIn">
             <img src={malarkeyHome} alt="" />
 
-            <figcaption>Malarkey.com home page</figcaption>
+            <figcaption>Malarkey.com home page (2015)</figcaption>
           </figure>
 
           <div className="description">
@@ -112,7 +114,7 @@ const PortfolioPage = () => {
           <figure aria-hidden="true" className="fadeIn">
             <img src={malarkeyShingles} alt="" />
 
-            <figcaption>Shingle Selector app</figcaption>
+            <figcaption>Shingle Selector (2015)</figcaption>
           </figure>
 
           <div className="description">
