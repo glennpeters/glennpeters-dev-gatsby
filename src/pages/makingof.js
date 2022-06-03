@@ -1,5 +1,5 @@
 import * as React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -136,7 +136,10 @@ const GatsbyPage = () => {
         <title>Making Of</title>
 
         <p>
-          Using <a href="https://github.com/necolas/normalize.css/">normalize.css</a>
+          Using 
+          <Link to="https://github.com/necolas/normalize.css/">
+            normalize.css
+          </Link>.
         </p>
 
         <div style={pageStyles}>

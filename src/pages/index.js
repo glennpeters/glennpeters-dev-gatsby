@@ -1,5 +1,5 @@
 import * as React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -101,9 +101,17 @@ const IndexPage = () => {
         </ul>
 
         <p>
-          In my spare time, I <a href="https://oregongo.org/" target="_blank" rel="noreferrer" title="oregongo.org - A site I developed for the Oregon Go community">play Go</a>  
+          In my spare time, I 
+          <Link to="https://oregongo.org/" title="oregongo.org - A site I developed for the Oregon Go community">
+            play Go
+          </Link>
+          {/* <a href="https://oregongo.org/" target="_blank" rel="noreferrer" title="oregongo.org - A site I developed for the Oregon Go community">play Go</a>   */}
           and practice 
-          <a href="https://thinplaces.photo/" target="_blank" rel="noreferrer" title="thinplaces.photo - my personal curated site">photography.</a>  (I made these sites, too.)
+          <Link to="https://thinplaces.photo/" title="thinplaces.photo - my personal curated site">
+            photography.
+          </Link>
+          {/* <a href="https://thinplaces.photo/" target="_blank" rel="noreferrer" title="thinplaces.photo - my personal curated site">photography.</a> */}
+          (I made these sites, too.)
         </p>
 
         {/* <p>
