@@ -131,7 +131,7 @@ const PortfolioPage = () => {
         <PortfolioCard>
           <h3>OregonGo.org</h3>
 
-          <figure aria-hidden="true">
+          <figure aria-hidden="true" className="fadeIn">
             <img src={oregonGo} alt="" />
 
             <figcaption>OregonGo.org</figcaption>

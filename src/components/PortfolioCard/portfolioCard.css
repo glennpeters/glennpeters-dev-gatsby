@@ -5,8 +5,12 @@
     padding: 1rem 1.5rem;
 }
 
-.description {
+.portfolioCard .description {
     margin: 0 auto;
+}
+
+.portfolioCard h3 {
+    padding: 0;
 }
 
 .portfolioCard p + p {
