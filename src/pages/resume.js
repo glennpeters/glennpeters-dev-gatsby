@@ -340,14 +340,11 @@ const ResumePage = () => {
           </section>
 
           <section className="job extended">
-            <div className="info">
-              <div className="company">
-                Oracle
-              </div>
-              <div className="position">
+            <h4>CoreMedia Training Solutions</h4>
+
+            <div className="position">
                 <div className="title">Senior Consultant</div>
                 <div className="dates">July 2000 - January 2001</div>
-              </div>
             </div>
 
             <ul>
@@ -451,7 +448,7 @@ const ResumePage = () => {
 
             <ul>
               <li>
-                Designed and created (and hosted) 
+                Designed and created, and hosted 
                 {' '}
                 <a href="https://oregongo.org/" target="_blank" rel="noopener noreferrer">oregongo.org</a> for
                 local Go community (Angular, Bootstrap, HTML, CSS, PHP)
