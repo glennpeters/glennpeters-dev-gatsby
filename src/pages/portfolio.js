@@ -30,7 +30,11 @@ const PortfolioPage = () => {
         <title>Portfolio</title>
 
         <div className="preface">
-          <p>Examples here are of projects that are, or were, visible to the public.</p>
+          <p>
+            Examples here are of projects that are, or were, visible to the public.  
+            With each of these I was working with a team, including a designer, except for 
+            oregongo.org, which I designed and built myself.
+          </p>
         </div>
 
         <PortfolioCard>
@@ -91,6 +95,8 @@ const PortfolioPage = () => {
             <p>
               Improved accessibility and design, inlcuding modal window.
             </p>
+
+            <p></p>
           </div>
 
         </PortfolioCard>
