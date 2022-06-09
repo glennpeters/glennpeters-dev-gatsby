@@ -227,11 +227,12 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    height: 1.5rem;
+    /* height: 1.5rem; */
     background-color: #005fb1;
     color: #fff;
+    font-size: 0.8rem;
     margin: 0;
-    padding: 0.7rem 0;
+    padding: 0.2rem 0;
     text-align: right;
 }
 
