@@ -73,6 +73,8 @@ const IndexPage = () => {
           including Intel, DSV, and Oracle to mid-size startups and agencies.  
         </p>
 
+        <h3>What</h3>
+
         <p>
           I have developed sites from scratch (e.g. Facteus sites Fraud Analytix and Match Validation).
           I've also worked on legacy sites (e.g. DSV OneView, Intel.com).  
@@ -99,6 +101,8 @@ const IndexPage = () => {
             allowing more detailed analysis of user flow.  
           </li>
         </ul>
+
+        <h3>Else</h3>
 
         <p>
           In my spare time, I 
