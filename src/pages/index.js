@@ -106,14 +106,18 @@ const IndexPage = () => {
 
         <p>
           In my spare time, I 
+          {' '}
           <Link to="https://oregongo.org/" title="oregongo.org - A site I developed for the Oregon Go community">
             play Go
           </Link>
+          {' '}
           {/* <a href="https://oregongo.org/" target="_blank" rel="noreferrer" title="oregongo.org - A site I developed for the Oregon Go community">play Go</a>   */}
           and practice 
+          {' '}
           <Link to="https://thinplaces.photo/" title="thinplaces.photo - my personal curated site">
-            photography.
-          </Link>
+            photography
+          </Link>.
+          {' '}
           {/* <a href="https://thinplaces.photo/" target="_blank" rel="noreferrer" title="thinplaces.photo - my personal curated site">photography.</a> */}
           (I made these sites, too.)
         </p>

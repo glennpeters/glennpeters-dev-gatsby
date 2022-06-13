@@ -201,13 +201,13 @@ main section p {
 }
 
 /* Handle unfortunate whitespace collapse of links */
-p > a:before {
+/* p > a:before {
     content: ' ';
 }
 
 p > a:after {
     content: ' ';
-}
+} */
 
 .note {
     font-style: italic;
