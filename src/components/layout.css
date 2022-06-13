@@ -185,9 +185,10 @@ main section h3 {
     font-size: 1.3rem;
     font-weight: 300;
     letter-spacing: .1em;
+    line-height: 1.4;
 
     padding: 0.5em 0 0;
-    margin: 0 0 0.7em;
+    margin: 0 0 0.5em;
     border-bottom: 1px solid rgba(200,200,200,0.8);
 
     /* position: -webkit-sticky;
