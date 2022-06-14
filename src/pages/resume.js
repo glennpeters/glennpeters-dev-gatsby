@@ -12,14 +12,26 @@ const ResumePage = () => {
         <title>Resume</title>
 
         <section className="myInfo" aria-label="My Info">
-          <ul className="unstyled-list">
-
+          <ul className="personal-info unstyled-list">
+            <li className="name">
+                Glenn Peters
+            </li>
+            <li className="bar"> | </li>            
             <li className="location">
                 Portland, OR
             </li>
+          </ul>
+
+          <ul className="links unstyled-list">
+            {/* <li className="location">
+                Glenn Peters
+            </li>            
+            <li className="location">
+                Portland, OR
+            </li> */}
             <li className="resume word">
-              <Link to="/resources/Glenn-Peters-Resume.docx" title="Download Resume (Word)">
-                Resume
+              <Link to="/resources/Glenn-Peters-Resume.docx" title="Download Résumé (Word)">
+                Résumé
               </Link>
             </li>
             <li className="mail">
@@ -33,12 +45,12 @@ const ResumePage = () => {
               </Link>
             </li> */}
             <li className="github">
-              <Link to="https://github.com/glennpeters" title="My personal Github">
+              <Link to="https://github.com/glennpeters" title="My own Github">
                 Github
               </Link>
             </li>
             <li className="linkedin">
-              <Link to="https://www.linkedin.com/in/glennbpeters/" title="My personal LinkedIn">
+              <Link to="https://www.linkedin.com/in/glennbpeters/" title="My own LinkedIn">
                 LinkedIn
               </Link>
             </li>
