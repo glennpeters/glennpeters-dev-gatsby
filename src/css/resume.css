@@ -27,11 +27,20 @@
     font-size: 0.9rem;
 }
 
+
+@media screen and (min-width: 600px) {
+    .resume .myInfo .unstyled-list {
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+}
+
+
 .resume .myInfo .unstyled-list li {
     display: inline-flex;
     flex: 0 1 auto;
     justify-content: flex-end;
-    padding: 0.1rem 0 0.1rem;
+    padding: 0.1rem 0.3rem 0.1rem;
 }
 
 .resume h4 + ul {

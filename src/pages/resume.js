@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -12,11 +13,34 @@ const ResumePage = () => {
 
         <section className="myInfo" aria-label="My Info">
           <ul className="unstyled-list">
-            <li className="mail">
-              <a href="mailto:work@glennpeters.dev">work@glennpeters.dev</a>
-            </li>
+
             <li className="location">
-                Location: Portland, OR
+                Portland, OR
+            </li>
+            <li className="resume word">
+              <Link to="/resources/Glenn-Peters-Resume.docx" title="Download Resume (Word)">
+                Resume
+              </Link>
+            </li>
+            <li className="mail">
+              <Link to="mailto:work@glennpeters.dev" title="Write me!">
+                Email
+              </Link>
+            </li>
+            {/* <li className="resume pdf">
+              <Link to="/resources/Glenn-Peters-Resume.pdf">
+                Resume (PDF)
+              </Link>
+            </li> */}
+            <li className="github">
+              <Link to="https://github.com/glennpeters" title="My personal Github">
+                Github
+              </Link>
+            </li>
+            <li className="linkedin">
+              <Link to="https://www.linkedin.com/in/glennbpeters/" title="My personal LinkedIn">
+                LinkedIn
+              </Link>
             </li>
             {/* <li className="phone">
               <a href="tel:503-753-4919">503 753-4919</a>
@@ -450,8 +474,12 @@ const ResumePage = () => {
               <li>
                 Designed and created, and hosted 
                 {' '}
-                <a href="https://oregongo.org/" target="_blank" rel="noopener noreferrer">oregongo.org</a> for
-                local Go community (Angular, Bootstrap, HTML, CSS, PHP)
+                <Link to="https://oregongo.org/">
+                  oregongo.org
+                </Link>
+                {' '}
+                {/* <a href="" target="_blank" rel="noopener noreferrer">oregongo.org</a>  */}
+                for the local Go community (Angular, Bootstrap, HTML, CSS, PHP)
               </li>
             </ul>
           </section>
